@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Close-Square" transform="translate(-2 -2)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(2 2)" fill="#3e66fb"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="10" cy="10" r="10" transform="translate(2 2)" fill="rgba(255,255,255,0.75)"/>
+    <path id="Path_84" data-name="Path 84" d="M15.016,13.771l-1.779-1.778,1.778-1.778a.875.875,0,0,0-1.237-1.238L12,10.755,10.22,8.974a.875.875,0,1,0-1.238,1.238l1.78,1.78L8.986,13.767a.875.875,0,0,0,1.237,1.238L12,13.229l1.78,1.779a.875.875,0,1,0,1.237-1.238Z" fill="#3e66fb"/>
+  </g>
+</svg>

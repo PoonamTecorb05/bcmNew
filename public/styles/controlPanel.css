@@ -1,0 +1,3053 @@
+
+/* ----------------control Panel Sec------------ */
+
+.controlPanel {
+    position: relative;
+    text-align: center;
+    margin: 58px 0;
+  }  
+  .controlPanel .customePieChart {
+    display: inline-block;
+    height: 480px;
+    width: 480px;
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 9;
+  }
+  
+  .controlPanel .customePieChart .slide {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+    -webkit-transition: all 0.4s linear 2s;
+    transition: all 0.4s linear 2s;
+    position: relative;
+    height: 240px;
+    cursor: pointer;
+  }
+  
+  .controlPanel .customePieChart .slide img {
+    width: 100%;
+  }
+  
+  .controlPanel .customePieChart::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #ffffff;
+    left: 12px;
+    right: 12px;
+    top: 12px;
+    bottom: 12px;
+    border-radius: 50%;
+  }
+  
+  .controlPanel .penal {
+    position: absolute;
+    width: 180px;
+    /* display: none; */
+  }
+  
+  .controlPanel .penal .titleName {
+    display: block;
+    font-weight: 400;
+    font-size: 11px;
+    margin-bottom: 20px;
+    color: #c2c9d1;
+  }
+  
+  .controlPanel .penal .titleName::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32px;
+    width: 37px;
+    position: absolute;
+  }
+  
+  .controlPanel .penal ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+  }
+  
+  .controlPanel .penal ul li {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.1);
+            box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.1);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .controlPanel .penal ul li strong.title {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 4px;
+  }
+  
+  .controlPanel .penal ul li strong.number {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3E66FB;
+  }
+  
+  .controlPanel .penal ul li strong.number span {
+    color: #9eb3fd;
+  }
+  
+  .controlPanel .penal ul li span.subtitle {
+    font-weight: 400;
+    color: #C2C9D1;
+    font-size: 12px;
+  }
+  
+  .controlPanel .penal ul li::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    background-color: #3E66FB;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    top: 10px;
+  }
+  
+  .controlPanel .penal ul li.aprove::after {
+    background-color: #3CC13B;
+  }
+  
+  .controlPanel .penal ul li.aprove span.subtitle {
+    color: #3CC13B;
+  }
+  
+  .controlPanel .penal ul li.await-aprove span.subtitle {
+    color: #3E66FB;
+  }
+  
+  .controlPanel .penal ul li.not-aprove span.subtitle {
+    color: #9eb3fd;
+  }
+  
+  .controlPanel .penal ul li.inactive span.subtitle,
+  .controlPanel .penal ul li.pending span.subtitle {
+    color: #3E66FB;
+  }
+  
+  .controlPanel .penal::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    width: 10px;
+    background-color: #c7d3fe;
+    border-radius: 10px;
+  }
+  
+  .controlPanel .penal::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10px;
+    position: absolute;
+    width: 260px;
+    background-color: #3E66FB;
+    border-radius: 30px;
+  }
+  
+  .controlPanel .penal.penalSlide1 {
+    top: 60px;
+    left: 30px;
+  }
+  
+  .controlPanel .penal.penalSlide1 .titleName {
+    padding-right: 90px;
+    text-align: left;
+  }
+  
+  .controlPanel .penal.penalSlide1 .titleName::after {
+    right: -16px;
+    background-image: url(../images/penal_top-1.png);
+    top: -25px;
+  }
+  
+  .controlPanel .penal.penalSlide1 ul li {
+    text-align: left;
+  }
+  
+  .controlPanel .penal.penalSlide1 ul li::after {
+    right: 11px;
+  }
+  
+  .controlPanel .penal.penalSlide1::before {
+    right: 11px;
+    top: 0;
+    bottom: 40px;
+  }
+  
+  .controlPanel .penal.penalSlide1::after {
+    left: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#c7d3fe), to(#3e66fb));
+    background-image: linear-gradient(to right, #c7d3fe, #3e66fb);
+    top: -25px;
+  }
+  
+  .controlPanel .penal.penalSlide2 {
+    top: 60px;
+    right: 30px;
+  }
+  
+  .controlPanel .penal.penalSlide2 .titleName {
+    padding-left: 60px;
+    text-align: right;
+  }
+  
+  .controlPanel .penal.penalSlide2 .titleName::after {
+    left: -14px;
+    background-image: url(../images/penal_top-2.png);
+    top: -25px;
+  }
+  
+  .controlPanel .penal.penalSlide2 ul li {
+    text-align: right;
+  }
+  
+  .controlPanel .penal.penalSlide2 ul li::after {
+    left: 11px;
+  }
+  
+  .controlPanel .penal.penalSlide2::before {
+    left: 11px;
+    top: 0;
+    bottom: 40px;
+  }
+  
+  .controlPanel .penal.penalSlide2::after {
+    right: 100%;
+    background-image: -webkit-gradient(linear, right top, left top, from(#c7d3fe), to(#3e66fb));
+    background-image: linear-gradient(to left, #c7d3fe, #3e66fb);
+    top: -25px;
+  }
+  
+  .controlPanel .penal.penalSlide3 {
+    bottom: 60px;
+    right: 30px;
+  }
+  
+  .controlPanel .penal.penalSlide3 .titleName {
+    padding-left: 30px;
+    text-align: right;
+  }
+  
+  .controlPanel .penal.penalSlide3 .titleName::after {
+    left: -14px;
+    background-image: url(../images/penal_top-3.png);
+    bottom: -25px;
+  }
+  
+  .controlPanel .penal.penalSlide3 ul li {
+    text-align: right;
+  }
+  
+  .controlPanel .penal.penalSlide3 ul li::after {
+    left: 11px;
+  }
+  
+  .controlPanel .penal.penalSlide3::before {
+    left: 11px;
+    bottom: 0;
+    top: 40px;
+  }
+  
+  .controlPanel .penal.penalSlide3::after {
+    right: 100%;
+    background-image: -webkit-gradient(linear, right top, left top, from(#c7d3fe), to(#3e66fb));
+    background-image: linear-gradient(to left, #c7d3fe, #3e66fb);
+    bottom: -25px;
+  }
+  
+  .controlPanel .penal.penalSlide4 {
+    bottom: 60px;
+    left: 30px;
+  }
+  
+  .controlPanel .penal.penalSlide4 .titleName {
+    padding-right: 30px;
+    text-align: left;
+  }
+  
+  .controlPanel .penal.penalSlide4 .titleName::after {
+    right: -16px;
+    background-image: url(../images/penal_top-4.png);
+    bottom: -25px;
+  }
+  
+  .controlPanel .penal.penalSlide4 ul li {
+    text-align: left;
+  }
+  
+  .controlPanel .penal.penalSlide4 ul li::after {
+    right: 11px;
+  }
+  
+  .controlPanel .penal.penalSlide4::before {
+    right: 11px;
+    bottom: 0;
+    top: 40px;
+  }
+  
+  .controlPanel .penal.penalSlide4::after {
+    left: 100%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#c7d3fe), to(#3e66fb));
+    background-image: linear-gradient(to right, #c7d3fe, #3e66fb);
+    bottom: -25px;
+  }
+  
+  .customePieChart .slide .controll {
+    background: #cfd9fe;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 10px solid #dbe3fe;
+    overflow: hidden;
+  }
+  
+  .customePieChart .slide .controll img {
+    width: 38px;
+    position: absolute;
+  }
+  
+  .customePieChart .slideSec1.slide .controll {
+    border-radius: 250px 30px 30px 30px;
+    bottom: 5px;
+    right: 5px;
+  }
+  
+  .customePieChart .slideSec1.slide .controll img {
+    right: 12px;
+    bottom: 12px;
+  }
+  
+  .customePieChart .slideSec2.slide .controll {
+    border-radius: 30px 250px 30px 30px;
+    bottom: 5px;
+    left: 5px;
+  }
+  
+  .customePieChart .slideSec2.slide .controll img {
+    left: 12px;
+    bottom: 12px;
+  }
+  
+  .customePieChart .slideSec3.slide .controll {
+    border-radius: 30px 30px 250px 30px;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .customePieChart .slideSec3.slide .controll img {
+    left: 12px;
+    top: 12px;
+  }
+  
+  .customePieChart .slideSec4.slide .controll {
+    border-radius: 30px 30px 30px 250px;
+    top: 5px;
+    right: 5px;
+  }
+  
+  .customePieChart .slideSec4.slide .controll img {
+    right: 12px;
+    top: 12px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .barOverflow {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    right: 5px;
+    bottom: 5px;
+    overflow: hidden;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .barOverflow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/define-mode1.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 51px;
+    width: 18px;
+    right: -2px;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .barOverflow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/define-mode2.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 14px;
+    width: 51px;
+    left: 0;
+    bottom: -2px;
+    z-index: 2;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 355px;
+    height: 355px;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 50px solid #f8f2ff;
+    border-bottom-color: #DABDFF;
+    border-right-color: #DABDFF;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    bottom: 18px;
+    left: -25px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage .percent_bar {
+    position: absolute;
+    background: #dabdff;
+    border-radius: 50%;
+    border: 7px solid #B57BFF;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage .percent_bar .textPercent {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+    padding-right: 8px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage .percent_bar .textPercent::after {
+    content: "%";
+    position: absolute;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -2px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="0"] .textPercent {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="1"] {
+    bottom: 16px;
+    left: -23px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="1"] .textPercent {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="2"] {
+    bottom: 14px;
+    left: -21px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="2"] .textPercent {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="3"] {
+    bottom: 13px;
+    left: -22px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="3"] .textPercent {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="4"] {
+    bottom: 10px;
+    left: -19px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="4"] .textPercent {
+    -webkit-transform: rotate(-50deg);
+            transform: rotate(-50deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="5"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="6"] {
+    bottom: 8px;
+    left: -17px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="5"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="6"] .textPercent {
+    -webkit-transform: rotate(-50deg);
+            transform: rotate(-50deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="7"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="8"] {
+    bottom: 5px;
+    left: -15px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="7"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="8"] .textPercent {
+    -webkit-transform: rotate(-53deg);
+            transform: rotate(-53deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="9"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="10"] {
+    bottom: 2px;
+    left: -12px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="9"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="10"] .textPercent {
+    -webkit-transform: rotate(-53deg);
+            transform: rotate(-53deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="11"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="12"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="13"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="14"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="15"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="11"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="12"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="13"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="14"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="15"] .textPercent {
+    -webkit-transform: rotate(-56deg);
+            transform: rotate(-56deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="16"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="17"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="18"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="19"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="20"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="16"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="17"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="18"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="19"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="20"] .textPercent {
+    -webkit-transform: rotate(-58deg);
+            transform: rotate(-58deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="21"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="22"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="23"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="24"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="25"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="21"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="22"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="23"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="24"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="25"] .textPercent {
+    -webkit-transform: rotate(-65deg);
+            transform: rotate(-65deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="26"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="27"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="28"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="29"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="30"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="26"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="27"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="28"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="29"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="30"] .textPercent {
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="31"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="32"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="33"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="34"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="35"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="31"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="32"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="33"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="34"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="35"] .textPercent {
+    -webkit-transform: rotate(284deg);
+            transform: rotate(284deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="36"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="37"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="38"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="39"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="40"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="36"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="37"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="38"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="39"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="40"] .textPercent {
+    -webkit-transform: rotate(280deg);
+            transform: rotate(280deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="41"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="42"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="43"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="44"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="45"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="41"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="42"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="43"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="44"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="45"] .textPercent {
+    -webkit-transform: rotate(275deg);
+            transform: rotate(275deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="46"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="47"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="48"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="49"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="50"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="46"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="47"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="48"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="49"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="50"] .textPercent {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="51"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="52"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="53"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="54"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="55"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="51"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="52"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="53"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="54"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="55"] .textPercent {
+    -webkit-transform: rotate(265deg);
+            transform: rotate(265deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="56"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="57"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="58"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="59"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="60"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="56"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="57"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="58"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="59"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="60"] .textPercent {
+    -webkit-transform: rotate(260deg);
+            transform: rotate(260deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="61"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="62"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="63"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="64"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="65"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="61"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="62"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="63"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="64"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="65"] .textPercent {
+    -webkit-transform: rotate(255deg);
+            transform: rotate(255deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="66"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="67"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="68"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="69"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="70"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="66"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="67"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="68"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="69"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="70"] .textPercent {
+    -webkit-transform: rotate(250deg);
+            transform: rotate(250deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="71"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="72"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="73"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="74"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="75"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="71"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="72"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="73"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="74"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="75"] .textPercent {
+    -webkit-transform: rotate(245deg);
+            transform: rotate(245deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="76"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="77"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="78"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="79"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="80"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="76"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="77"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="78"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="79"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="80"] .textPercent {
+    -webkit-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="81"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="82"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="83"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="84"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="85"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="81"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="82"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="83"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="84"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="85"] .textPercent {
+    -webkit-transform: rotate(240deg);
+            transform: rotate(240deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="86"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="87"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="88"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="89"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="90"] {
+    bottom: -21px;
+    left: 13px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="86"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="87"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="88"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="89"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="90"] .textPercent {
+    -webkit-transform: rotate(238deg);
+            transform: rotate(238deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="91"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="92"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="93"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="94"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="95"] {
+    bottom: -21px;
+    left: 13px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="91"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="92"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="93"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="94"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="95"] .textPercent {
+    -webkit-transform: rotate(228deg);
+            transform: rotate(228deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="96"],
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="97"] {
+    bottom: -21px;
+    left: 13px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="96"] .textPercent,
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="97"] .textPercent {
+    -webkit-transform: rotate(224.5deg);
+            transform: rotate(224.5deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="98"] {
+    bottom: -23px;
+    left: 16px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="98"] .textPercent {
+    -webkit-transform: rotate(226deg);
+            transform: rotate(226deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="99"] {
+    bottom: -24px;
+    left: 17px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="99"] .textPercent {
+    -webkit-transform: rotate(226deg);
+            transform: rotate(226deg);
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="100"] {
+    bottom: -25px;
+    left: 18px;
+  }
+  
+  .customePieChart .slideSec1 .progressBar .percentage[data-progress="100"] .textPercent {
+    -webkit-transform: rotate(226deg);
+            transform: rotate(226deg);
+  }
+  
+  .customePieChart .slideSec1 .mode {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    right: 6px;
+    bottom: 6px;
+  }
+  
+  .customePieChart .slideSec1 .mode::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    background-image: url(../images/mode-1.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .customePieChart .slideSec1 .mode::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    background-image: url(../images/text-defile-mode-hover.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 4px;
+    bottom: 10px;
+    width: 94px;
+    height: 160px;
+    z-index: 9;
+  }
+  
+  .customePieChart .slideSec1 .mode .hover_effect {
+    position: absolute;
+    height: 80px;
+    width: 38px;
+    background-color: #9eb3fd;
+    z-index: 9;
+    top: 66px;
+    left: 57px;
+    border-radius: 20px;
+    -webkit-transform: rotate(37deg);
+            transform: rotate(37deg);
+  }
+  
+  .customePieChart .slideSec1 .move_rb {
+    position: absolute;
+    height: 100%;
+    left: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .customePieChart .slideSec1:hover {
+    left: -10px;
+    bottom: 10px;
+  }
+  
+  .customePieChart .slideSec1:hover .controll.control_1 {
+    background: #6e8cfc;
+    border-color: #3e66fb;
+  }
+  
+  .customePieChart .slideSec1:hover .progressBar .bar {
+    border: 50px solid #ebf9eb;
+    border-bottom-color: #9de09d;
+    border-right-color: #9de09d;
+  }
+  
+  .customePieChart .slideSec1:hover .progressBar .bar .percentage .percent_bar {
+    background: #80d780;
+    border: 7px solid #3cc13b;
+  }
+  
+  .customePieChart .slideSec1:hover .mode {
+    right: 6px;
+    bottom: 6px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .customePieChart .slideSec1:hover .mode .hover_effect {
+    opacity: 0;
+  }
+  
+  .customePieChart .slideSec1:hover .mode::after {
+    background-image: url(../images/mode-1-hover.svg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .barOverflow {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    left: 5px;
+    bottom: 5px;
+    overflow: hidden;
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .barOverflow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/define-mode1.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 54px;
+    width: 18px;
+    right: -2px;
+    top: -2px;
+    z-index: 2;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .barOverflow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/define-mode2.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 14px;
+    width: 51px;
+    left: 0;
+    bottom: -4px;
+    z-index: 2;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 355px;
+    height: 355px;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 50px solid #f8f2ff;
+    border-bottom-color: #DABDFF;
+    border-right-color: #DABDFF;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: -25px;
+    right: 18px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage .percent_bar {
+    position: absolute;
+    background: #dabdff;
+    border-radius: 50%;
+    border: 7px solid #B57BFF;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage .percent_bar .textPercent {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+    padding-right: 8px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage .percent_bar .textPercent::after {
+    content: "%";
+    position: absolute;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -2px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="0"] .textPercent {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="1"] {
+    top: -23px;
+    right: 16px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="1"] .textPercent {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="2"] {
+    top: -22px;
+    right: 15px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="2"] .textPercent {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="3"] {
+    top: -20px;
+    right: 12px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="3"] .textPercent {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="4"] {
+    top: -18px;
+    right: 9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="4"] .textPercent {
+    -webkit-transform: rotate(-44deg);
+            transform: rotate(-44deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="5"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="6"] {
+    top: -17px;
+    right: 7px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="5"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="6"] .textPercent {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="7"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="8"] {
+    right: 5px;
+    top: -15px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="7"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="8"] .textPercent {
+    -webkit-transform: rotate(323deg);
+            transform: rotate(323deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="9"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="10"] {
+    right: 2px;
+    top: -12px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="9"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="10"] .textPercent {
+    -webkit-transform: rotate(-34deg);
+            transform: rotate(-34deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="11"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="12"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="13"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="14"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="15"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="11"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="12"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="13"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="14"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="15"] .textPercent {
+    -webkit-transform: rotate(325deg);
+            transform: rotate(325deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="16"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="17"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="18"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="19"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="20"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="16"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="17"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="18"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="19"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="20"] .textPercent {
+    -webkit-transform: rotate(329deg);
+            transform: rotate(329deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="21"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="22"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="23"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="24"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="25"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="21"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="22"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="23"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="24"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="25"] .textPercent {
+    -webkit-transform: rotate(334deg);
+            transform: rotate(334deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="26"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="27"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="28"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="29"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="30"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="26"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="27"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="28"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="29"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="30"] .textPercent {
+    -webkit-transform: rotate(339deg);
+            transform: rotate(339deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="31"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="32"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="33"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="34"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="35"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="31"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="32"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="33"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="34"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="35"] .textPercent {
+    -webkit-transform: rotate(340deg);
+            transform: rotate(340deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="36"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="37"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="38"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="39"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="40"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="36"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="37"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="38"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="39"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="40"] .textPercent {
+    -webkit-transform: rotate(346deg);
+            transform: rotate(346deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="41"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="42"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="43"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="44"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="45"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="41"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="42"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="43"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="44"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="45"] .textPercent {
+    -webkit-transform: rotate(355deg);
+            transform: rotate(355deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="46"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="47"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="48"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="49"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="50"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="46"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="47"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="48"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="49"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="50"] .textPercent {
+    -webkit-transform: rotate(358deg);
+            transform: rotate(358deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="51"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="52"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="53"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="54"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="55"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="51"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="52"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="53"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="54"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="55"] .textPercent {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="56"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="57"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="58"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="59"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="60"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="56"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="57"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="58"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="59"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="60"] .textPercent {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="61"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="62"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="63"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="64"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="65"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="61"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="62"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="63"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="64"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="65"] .textPercent {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="66"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="67"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="68"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="69"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="70"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="66"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="67"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="68"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="69"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="70"] .textPercent {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="71"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="72"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="73"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="74"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="75"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="71"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="72"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="73"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="74"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="75"] .textPercent {
+    -webkit-transform: rotate(19deg);
+            transform: rotate(19deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="76"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="77"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="78"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="79"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="80"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="76"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="77"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="78"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="79"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="80"] .textPercent {
+    -webkit-transform: rotate(24deg);
+            transform: rotate(24deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="81"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="82"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="83"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="84"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="85"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="81"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="82"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="83"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="84"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="85"] .textPercent {
+    -webkit-transform: rotate(29deg);
+            transform: rotate(29deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="86"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="87"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="88"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="89"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="90"] {
+    right: -21px;
+    top: 13px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="86"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="87"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="88"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="89"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="90"] .textPercent {
+    -webkit-transform: rotate(34deg);
+            transform: rotate(34deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="91"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="92"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="93"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="94"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="95"] {
+    right: -21px;
+    top: 13px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="91"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="92"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="93"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="94"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="95"] .textPercent {
+    -webkit-transform: rotate(39deg);
+            transform: rotate(39deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="96"],
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="97"] {
+    right: -21px;
+    top: 13px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="96"] .textPercent,
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="97"] .textPercent {
+    -webkit-transform: rotate(41deg);
+            transform: rotate(41deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="98"] {
+    right: -23px;
+    top: 16px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="98"] .textPercent {
+    -webkit-transform: rotate(43deg);
+            transform: rotate(43deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="99"] {
+    right: -24px;
+    top: 17px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="99"] .textPercent {
+    -webkit-transform: rotate(43deg);
+            transform: rotate(43deg);
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="100"] {
+    right: -25px;
+    top: 18px;
+  }
+  
+  .customePieChart .slideSec2 .progressBar .percentage[data-progress="100"] .textPercent {
+    -webkit-transform: rotate(43deg);
+            transform: rotate(43deg);
+  }
+  
+  .customePieChart .slideSec2 .mode {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    right: -6px;
+    bottom: 6px;
+  }
+  
+  .customePieChart .slideSec2 .mode::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    background-image: url(../images/mode-2.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .customePieChart .slideSec2 .mode::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    background-image: url(../images/text-design-mode.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -16px;
+    bottom: -59px;
+    width: 93px;
+    height: 152px;
+    z-index: 9;
+    -webkit-transform: rotate(19deg);
+            transform: rotate(19deg);
+  }
+  
+  .customePieChart .slideSec2 .move_rb {
+    position: absolute;
+    height: 100%;
+    left: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .customePieChart .slideSec2:hover {
+    right: -10px;
+    bottom: 10px;
+  }
+  
+  .customePieChart .slideSec2:hover .controll.control_2 {
+    background: #6e8cfc;
+    border-color: #3e66fb;
+  }
+  
+  .customePieChart .slideSec2:hover .progressBar .bar {
+    border: 50px solid #ebf9eb;
+    border-bottom-color: #9de09d;
+    border-right-color: #9de09d;
+  }
+  
+  .customePieChart .slideSec2:hover .progressBar .bar .percentage .percent_bar {
+    background: #80d780;
+    border: 7px solid #3cc13b;
+  }
+  
+  .customePieChart .slideSec2:hover .mode {
+    left: 6px;
+    bottom: 6px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .customePieChart .slideSec2:hover .mode .hover_effect {
+    opacity: 0;
+  }
+  
+  .customePieChart .slideSec2:hover .mode::after {
+    background-image: url(../images/mode-2-hover.svg);
+  }
+  
+  .customePieChart .slideSec2:hover .mode::before {
+    right: 4px;
+    bottom: 12px;
+    width: 93px;
+    height: 152px;
+    z-index: 9;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .barOverflow {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    top: 5px;
+    right: 5px;
+    overflow: hidden;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .barOverflow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/define-mode1.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 52px;
+    width: 18px;
+    right: -4px;
+    top: 0px;
+    z-index: 2;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .barOverflow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/define-mode2.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 14px;
+    width: 51px;
+    left: 0;
+    bottom: -2px;
+    z-index: 2;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 355px;
+    height: 355px;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 50px solid #f8f2ff;
+    border-bottom-color: #DABDFF;
+    border-right-color: #DABDFF;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: -25px;
+    right: 18px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage .percent_bar {
+    position: absolute;
+    background: #dabdff;
+    border-radius: 50%;
+    border: 7px solid #B57BFF;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage .percent_bar .textPercent {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+    padding-right: 8px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage .percent_bar .textPercent::after {
+    content: "%";
+    position: absolute;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -2px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="0"] .textPercent {
+    -webkit-transform: rotate(131deg);
+            transform: rotate(131deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="1"] {
+    top: -23px;
+    right: 16px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="1"] .textPercent {
+    -webkit-transform: rotate(131deg);
+            transform: rotate(131deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="2"] {
+    top: -22px;
+    right: 15px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="2"] .textPercent {
+    -webkit-transform: rotate(131deg);
+            transform: rotate(131deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="3"] {
+    top: -20px;
+    right: 12px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="3"] .textPercent {
+    -webkit-transform: rotate(131deg);
+            transform: rotate(131deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="4"] {
+    top: -18px;
+    right: 9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="4"] .textPercent {
+    -webkit-transform: rotate(130deg);
+            transform: rotate(130deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="5"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="6"] {
+    top: -17px;
+    right: 7px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="5"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="6"] .textPercent {
+    -webkit-transform: rotate(133deg);
+            transform: rotate(133deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="7"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="8"] {
+    right: 5px;
+    top: -15px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="7"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="8"] .textPercent {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="9"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="10"] {
+    right: 2px;
+    top: -12px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="9"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="10"] .textPercent {
+    -webkit-transform: rotate(130deg);
+            transform: rotate(130deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="11"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="12"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="13"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="14"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="15"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="11"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="12"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="13"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="14"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="15"] .textPercent {
+    -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="16"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="17"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="18"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="19"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="20"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="16"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="17"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="18"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="19"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="20"] .textPercent {
+    -webkit-transform: rotate(151deg);
+            transform: rotate(151deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="21"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="22"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="23"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="24"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="25"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="21"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="22"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="23"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="24"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="25"] .textPercent {
+    -webkit-transform: rotate(151deg);
+            transform: rotate(151deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="26"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="27"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="28"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="29"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="30"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="26"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="27"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="28"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="29"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="30"] .textPercent {
+    -webkit-transform: rotate(158deg);
+            transform: rotate(158deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="31"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="32"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="33"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="34"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="35"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="31"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="32"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="33"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="34"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="35"] .textPercent {
+    -webkit-transform: rotate(162deg);
+            transform: rotate(162deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="36"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="37"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="38"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="39"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="40"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="36"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="37"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="38"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="39"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="40"] .textPercent {
+    -webkit-transform: rotate(170deg);
+            transform: rotate(170deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="41"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="42"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="43"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="44"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="45"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="41"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="42"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="43"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="44"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="45"] .textPercent {
+    -webkit-transform: rotate(173deg);
+            transform: rotate(173deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="46"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="47"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="48"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="49"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="50"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="46"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="47"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="48"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="49"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="50"] .textPercent {
+    -webkit-transform: rotate(178deg);
+            transform: rotate(178deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="51"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="52"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="53"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="54"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="55"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="51"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="52"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="53"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="54"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="55"] .textPercent {
+    -webkit-transform: rotate(182deg);
+            transform: rotate(182deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="56"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="57"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="58"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="59"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="60"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="56"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="57"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="58"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="59"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="60"] .textPercent {
+    -webkit-transform: rotate(189deg);
+            transform: rotate(189deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="61"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="62"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="63"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="64"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="65"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="61"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="62"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="63"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="64"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="65"] .textPercent {
+    -webkit-transform: rotate(193deg);
+            transform: rotate(193deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="66"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="67"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="68"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="69"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="70"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="66"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="67"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="68"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="69"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="70"] .textPercent {
+    -webkit-transform: rotate(199deg);
+            transform: rotate(199deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="71"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="72"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="73"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="74"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="75"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="71"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="72"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="73"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="74"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="75"] .textPercent {
+    -webkit-transform: rotate(200deg);
+            transform: rotate(200deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="76"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="77"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="78"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="79"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="80"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="76"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="77"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="78"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="79"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="80"] .textPercent {
+    -webkit-transform: rotate(205deg);
+            transform: rotate(205deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="81"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="82"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="83"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="84"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="85"] {
+    right: -2px;
+    top: -9px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="81"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="82"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="83"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="84"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="85"] .textPercent {
+    -webkit-transform: rotate(210deg);
+            transform: rotate(210deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="86"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="87"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="88"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="89"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="90"] {
+    right: -21px;
+    top: 13px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="86"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="87"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="88"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="89"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="90"] .textPercent {
+    -webkit-transform: rotate(210deg);
+            transform: rotate(210deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="91"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="92"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="93"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="94"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="95"] {
+    right: -21px;
+    top: 13px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="91"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="92"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="93"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="94"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="95"] .textPercent {
+    -webkit-transform: rotate(218deg);
+            transform: rotate(218deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="96"],
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="97"] {
+    right: -21px;
+    top: 13px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="96"] .textPercent,
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="97"] .textPercent {
+    -webkit-transform: rotate(218deg);
+            transform: rotate(218deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="98"] {
+    right: -23px;
+    top: 16px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="98"] .textPercent {
+    -webkit-transform: rotate(212deg);
+            transform: rotate(212deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="99"] {
+    right: -24px;
+    top: 17px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="99"] .textPercent {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="100"] {
+    right: -25px;
+    top: 18px;
+  }
+  
+  .customePieChart .slideSec4 .progressBar .percentage[data-progress="100"] .textPercent {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+  }
+  
+  .customePieChart .slideSec4 .mode {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    right: 6px;
+    bottom: -6px;
+  }
+  
+  .customePieChart .slideSec4 .mode::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    background-image: url(../images/mode-3.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .customePieChart .slideSec4 .mode::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    background-image: url(../images/text-improve-mode.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0px;
+    top: 13px;
+    width: 102px;
+    height: 178px;
+    z-index: 9;
+  }
+  
+  .customePieChart .slideSec4 .mode .hover_effect {
+    position: absolute;
+    height: 80px;
+    width: 38px;
+    background-color: #9eb3fd;
+    z-index: 9;
+    top: 102px;
+    left: 57px;
+    border-radius: 20px;
+    -webkit-transform: rotate(314deg);
+            transform: rotate(314deg);
+  }
+  
+  .customePieChart .slideSec4 .move_rb {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    top: 0;
+  }
+  
+  .customePieChart .slideSec4:hover {
+    left: -10px;
+    top: 10px;
+  }
+  
+  .customePieChart .slideSec4:hover .controll.control_3 {
+    background: #6e8cfc;
+    border-color: #3e66fb;
+  }
+  
+  .customePieChart .slideSec4:hover .progressBar .bar {
+    border: 50px solid #ebf9eb;
+    border-bottom-color: #9de09d;
+    border-right-color: #9de09d;
+  }
+  
+  .customePieChart .slideSec4:hover .progressBar .bar .percentage .percent_bar {
+    background: #80d780;
+    border: 7px solid #3cc13b;
+  }
+  
+  .customePieChart .slideSec4:hover .mode {
+    right: 6px;
+    top: 6px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .customePieChart .slideSec4:hover .mode .hover_effect {
+    opacity: 0;
+  }
+  
+  .customePieChart .slideSec4:hover .mode::after {
+    background-image: url(../images/mode-4-hover.svg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .barOverflow {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    left: 5px;
+    top: 5px;
+    overflow: hidden;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .barOverflow::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/define-mode1.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 52px;
+    width: 18px;
+    right: -4px;
+    top: -1px;
+    z-index: 2;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .barOverflow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url(../images/define-mode2.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 15px;
+    width: 50px;
+    left: 0;
+    bottom: -5px;
+    z-index: 2;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 355px;
+    height: 355px;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 50px solid #f8f2ff;
+    border-bottom-color: #DABDFF;
+    border-right-color: #DABDFF;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left: -25px;
+    bottom: 18px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage .percent_bar {
+    position: absolute;
+    background: #dabdff;
+    border-radius: 50%;
+    border: 7px solid #B57BFF;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage .percent_bar .textPercent {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    position: relative;
+    padding-right: 8px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage .percent_bar .textPercent::after {
+    content: "%";
+    position: absolute;
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -2px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="0"] .textPercent {
+    -webkit-transform: rotate(131deg);
+            transform: rotate(131deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="1"] {
+    left: -23px;
+    bottom: 16px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="1"] .textPercent {
+    -webkit-transform: rotate(131deg);
+            transform: rotate(131deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="2"] {
+    left: -22px;
+    bottom: 15px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="2"] .textPercent {
+    -webkit-transform: rotate(131deg);
+            transform: rotate(131deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="3"] {
+    left: -20px;
+    bottom: 12px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="3"] .textPercent {
+    -webkit-transform: rotate(131deg);
+            transform: rotate(131deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="4"] {
+    left: -18px;
+    bottom: 9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="4"] .textPercent {
+    -webkit-transform: rotate(127deg);
+            transform: rotate(127deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="5"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="6"] {
+    left: -17px;
+    bottom: 7px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="5"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="6"] .textPercent {
+    -webkit-transform: rotate(130deg);
+            transform: rotate(130deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="7"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="8"] {
+    bottom: 5px;
+    left: -15px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="7"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="8"] .textPercent {
+    -webkit-transform: rotate(126deg);
+            transform: rotate(126deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="9"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="10"] {
+    bottom: 2px;
+    left: -12px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="9"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="10"] .textPercent {
+    -webkit-transform: rotate(124deg);
+            transform: rotate(124deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="11"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="12"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="13"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="14"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="15"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="11"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="12"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="13"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="14"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="15"] .textPercent {
+    -webkit-transform: rotate(121deg);
+            transform: rotate(121deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="16"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="17"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="18"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="19"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="20"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="16"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="17"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="18"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="19"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="20"] .textPercent {
+    -webkit-transform: rotate(115deg);
+            transform: rotate(115deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="21"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="22"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="23"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="24"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="25"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="21"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="22"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="23"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="24"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="25"] .textPercent {
+    -webkit-transform: rotate(110deg);
+            transform: rotate(110deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="26"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="27"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="28"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="29"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="30"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="26"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="27"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="28"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="29"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="30"] .textPercent {
+    -webkit-transform: rotate(106deg);
+            transform: rotate(106deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="31"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="32"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="33"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="34"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="35"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="31"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="32"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="33"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="34"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="35"] .textPercent {
+    -webkit-transform: rotate(104deg);
+            transform: rotate(104deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="36"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="37"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="38"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="39"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="40"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="36"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="37"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="38"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="39"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="40"] .textPercent {
+    -webkit-transform: rotate(99deg);
+            transform: rotate(99deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="41"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="42"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="43"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="44"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="45"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="41"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="42"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="43"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="44"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="45"] .textPercent {
+    -webkit-transform: rotate(95deg);
+            transform: rotate(95deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="46"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="47"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="48"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="49"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="50"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="46"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="47"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="48"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="49"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="50"] .textPercent {
+    -webkit-transform: rotate(88deg);
+            transform: rotate(88deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="51"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="52"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="53"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="54"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="55"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="51"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="52"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="53"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="54"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="55"] .textPercent {
+    -webkit-transform: rotate(86deg);
+            transform: rotate(86deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="56"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="57"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="58"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="59"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="60"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="56"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="57"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="58"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="59"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="60"] .textPercent {
+    -webkit-transform: rotate(78deg);
+            transform: rotate(78deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="61"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="62"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="63"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="64"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="65"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="61"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="62"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="63"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="64"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="65"] .textPercent {
+    -webkit-transform: rotate(74deg);
+            transform: rotate(74deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="66"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="67"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="68"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="69"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="70"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="66"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="67"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="68"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="69"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="70"] .textPercent {
+    -webkit-transform: rotate(69deg);
+            transform: rotate(69deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="71"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="72"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="73"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="74"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="75"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="71"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="72"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="73"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="74"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="75"] .textPercent {
+    -webkit-transform: rotate(64deg);
+            transform: rotate(64deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="76"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="77"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="78"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="79"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="80"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="76"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="77"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="78"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="79"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="80"] .textPercent {
+    -webkit-transform: rotate(61deg);
+            transform: rotate(61deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="81"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="82"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="83"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="84"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="85"] {
+    bottom: -2px;
+    left: -9px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="81"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="82"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="83"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="84"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="85"] .textPercent {
+    -webkit-transform: rotate(56deg);
+            transform: rotate(56deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="86"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="87"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="88"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="89"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="90"] {
+    bottom: -21px;
+    left: 13px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="86"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="87"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="88"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="89"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="90"] .textPercent {
+    -webkit-transform: rotate(52deg);
+            transform: rotate(52deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="91"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="92"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="93"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="94"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="95"] {
+    bottom: -21px;
+    left: 13px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="91"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="92"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="93"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="94"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="95"] .textPercent {
+    -webkit-transform: rotate(48deg);
+            transform: rotate(48deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="96"],
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="97"] {
+    bottom: -21px;
+    left: 13px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="96"] .textPercent,
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="97"] .textPercent {
+    -webkit-transform: rotate(41deg);
+            transform: rotate(41deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="98"] {
+    bottom: -23px;
+    left: 16px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="98"] .textPercent {
+    -webkit-transform: rotate(43deg);
+            transform: rotate(43deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="99"] {
+    bottom: -24px;
+    left: 17px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="99"] .textPercent {
+    -webkit-transform: rotate(43deg);
+            transform: rotate(43deg);
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="100"] {
+    bottom: -25px;
+    left: 18px;
+  }
+  
+  .customePieChart .slideSec3 .progressBar .percentage[data-progress="100"] .textPercent {
+    -webkit-transform: rotate(43deg);
+            transform: rotate(43deg);
+  }
+  
+  .customePieChart .slideSec3 .move_rb {
+    position: absolute;
+    height: 100%;
+    left: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .customePieChart .slideSec3 .mode {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    left: 6px;
+    top: 6px;
+  }
+  
+  .customePieChart .slideSec3 .mode::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    background-image: url(../images/mode-4.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .customePieChart .slideSec3 .mode::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    background-image: url(../images/embed-mode-text.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 12px;
+    top: 14px;
+    width: 40px;
+    height: 101px;
+    z-index: 9;
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  
+  .customePieChart .slideSec3 .mode .hover_effect {
+    position: absolute;
+    height: 102px;
+    width: 38px;
+    background-color: #9eb3fd;
+    z-index: 9;
+    top: 92px;
+    right: 58px;
+    border-radius: 20px;
+    -webkit-transform: rotate(37deg);
+            transform: rotate(37deg);
+  }
+  
+  .customePieChart .slideSec3:hover {
+    right: -10px;
+    top: 10px;
+  }
+  
+  .customePieChart .slideSec3:hover .controll.control_4 {
+    background: #6e8cfc;
+    border-color: #3e66fb;
+  }
+  
+  .customePieChart .slideSec3:hover .progressBar .bar {
+    border: 50px solid #ebf9eb;
+    border-bottom-color: #9de09d;
+    border-right-color: #9de09d;
+  }
+  
+  .customePieChart .slideSec3:hover .progressBar .bar .percentage .percent_bar {
+    background: #80d780;
+    border: 7px solid #3cc13b;
+  }
+  
+  .customePieChart .slideSec3:hover .mode {
+    left: 6px;
+    bottom: 6px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .customePieChart .slideSec3:hover .mode .hover_effect {
+    opacity: 0;
+  }
+  
+  .customePieChart .slideSec3:hover .mode::after {
+    background-image: url(../images/mode-3-hover.svg);
+  }
+  
+  .customePieChart .slideSec3:hover .mode::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    background-image: url(../images/embed-mode-text.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 93px;
+    height: 152px;
+    z-index: 9;
+    -webkit-transform: rotate(337deg);
+            transform: rotate(337deg);
+    right: 4px;
+    top: 15px;
+    z-index: 9;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    background-image: url(../images/text-embed-mode.svg);
+  }
+  
+  .controlPanel .customePieChart.no_before::before {
+    display: none;
+  }
+
+
+/* ----------company Dashboard-------------- */
+
+.companyDashboard {
+    margin-top: 35px;
+  }
+  
+  .companyDashboard .controlPanel {
+    text-align: left;
+  }
+  
+  .companyDashboard .controlPanel .customePieChart {
+    height: 250px;
+    margin: 0px;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide {
+    left: 0px;
+    bottom: 10px;
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px 230px 10px 10px;
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .move_rb {
+    left: 10px;
+    bottom: 10px;
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .controll.control_2 {
+    background: #6e8cfc;
+    border-color: #3e66fb;
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .progressBar .bar {
+    border: 50px solid #ebf9eb;
+    border-bottom-color: #9de09d;
+    border-right-color: #9de09d;
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .progressBar .bar  .percent_bar {
+    background: #80d780;
+    border: 7px solid #3cc13b;
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .mode {
+    left: 6px;
+    bottom: 5px;
+    height: 96%;
+    width: 104%;
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .mode .hover_effect {
+    opacity: 0;
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .mode::after {
+    background-image: url(../images/mode-2-hover.png);
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .mode::before {
+    right: 4px;
+    bottom: 12px;
+    width: 93px;
+    height: 152px;
+    z-index: 9;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .move_rb {
+    left: 10px;
+    bottom: 10px;
+  }
+  
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide {
+    left: 0px;
+    bottom: 10px;
+  }
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide::before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px 230px 10px 10px;
+  }
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .mode::before {
+    right: 4px;
+    bottom: 12px;
+    width: 93px;
+    height: 152px;
+    z-index: 9;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .mode::after {
+    background-image: url(../images/mode-2-hover.svg);
+  }
+  .companyDashboard .controlPanel .customePieChart .slideSec2.slide .mode{
+    left: 3px;
+    bottom: 6px;
+    height: 250px;
+    width: 250px;
+  }
+  .companyDashboard .customePieChart .slideSec2:hover .mode .hover_effect {
+    opacity: 1;
+  }
+  .companyDashboard .controlPanel .customePieChart{
+    height: 250px;
+    margin: 0px;
+    border-radius: 0;
+    background-color: transparent;
+  }
+ .slick-track{
+      width: 100% !important;
+  }

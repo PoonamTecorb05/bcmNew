@@ -1,0 +1,995 @@
+$FontFamily: var(--fontFamity);
+
+.contentWrapper {
+    min-height: 227px;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 272px;
+
+    .bcpActivated {
+        padding: 31px 30px 32px 28px !important;
+        background-color: #fff;
+        h3 {
+            color: #000;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            font-family: $FontFamily;
+        }
+        .afterApproved {
+            background-color: #fff;
+        }
+        .addBtn {
+            width: 40.67px;
+            height: 40.67px;
+            background: #b57bff;
+            border-radius: 11px;
+            line-height: 43.67px;
+            padding: 0;
+            text-align: center;
+            margin-left: 25px;
+            img {
+                width: 15.67px;
+                margin-top: -7px;
+            }
+        }
+    }
+    .innerSec {
+        padding: 53px 44px !important;
+        .processSection {
+            box-shadow: 0px 16px 24px #d9d8d8;
+            border-radius: 24px;
+            margin: auto;
+            background-color: #ffffff;
+            width: 800px;
+            h1 {
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 48px;
+                font-family: $FontFamily;
+                margin-bottom: 2px;
+            }
+            p {
+                color: #91979d;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+                font-family: $FontFamily;
+            }
+            .buttonSec {
+                margin-top: 40px;
+                button {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    height: 40px;
+                    text-align: center;
+                    font-family: $FontFamily;
+                    border-radius: 100px;
+                    margin: 0 8px;
+                }
+            }
+            &.startProcessSection {
+                padding: 80px 28px 90px;
+                .imageSection {
+                    width: 190px;
+                    height: 190px;
+                    overflow: hidden;
+                    margin: auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+                h1 {
+                    color: #3e66fb;
+                }
+                .buttonSec {
+                    button {
+                        width: 186px;
+                        border: 1px solid #b57bff;
+                        &.importBtn {
+                            color: #b57bff;
+                            background: #fff;
+                        }
+                        &.AddBtn {
+                            background: #b57bff;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            &.sucessFullProcessSection {
+                padding: 60px 28px 65px;
+                .imageSection {
+                    width: 321px;
+                    height: 220px;
+                    overflow: hidden;
+                    margin: 0 auto 12px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                h1 {
+                    color: #3cc13b;
+                }
+                p {
+                    color: #616569;
+                }
+                .buttonSec {
+                    button {
+                        padding: 0 44px;
+                        border: 1px solid #3cc13b;
+                        &.finishBtn {
+                            color: #3cc13b;
+                            background: #fff;
+                        }
+                        &.AddBtn {
+                            background: #3cc13b;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .addSection {
+            box-shadow: 0px 16px 24px #d9d8d8;
+            border-radius: 24px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            width: 800px;
+            padding: 48px 56px 60px;
+            .headingSec {
+                h2 {
+                    font-size: 36px;
+                    line-height: 48px;
+                    font-weight: 500;
+                    color: #000000;
+                    font-family: $FontFamily;
+                    margin-bottom: 0px;
+                    text-transform: capitalize;
+                }
+                h5 {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #91979d;
+                    font-family: $FontFamily;
+                    margin-bottom: 30px;
+                    span {
+                        color: #000000;
+                    }
+                }
+                p {
+                    color: #91979d;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 29px;
+                    font-family: $FontFamily;
+                }
+            }
+            .formSec {
+                .customeFormGroup {
+                    margin-bottom: 24px;
+                    label {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-family: $FontFamily;
+                        margin-bottom: 7px;
+                    }
+                    input,
+                    textarea {
+                        border-radius: 11.2558px;
+                        border: 1px solid #e1e4e8;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding: 4px 15px;
+                        width: 100%;
+                        height: 42px;
+                        color: #b57bff;
+                        &::placeholder {
+                            color: #c2c9d1;
+                        }
+                    }
+                    textarea {
+                        height: 140px;
+                    }
+                }
+            }
+
+            .stepSection {
+                margin: 17px 0 0;
+                .backStep {
+                    float: left;
+                    line-height: 14px;
+                    color: #92979d !important;
+                    font-size: 10px;
+                    font-weight: 500;
+                    label {
+                        color: #b57bff;
+                        opacity: 1;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    .backBtn {
+                        border: 0px solid transparent;
+                        padding: 0px 0px;
+                        border-radius: 10px;
+                        font-size: 22px;
+                        line-height: 1;
+                        display: inline-block;
+                        background: top;
+                        opacity: 0.5;
+                        svg {
+                            width: 28px;
+                        }
+                    }
+                }
+                .nextStep {
+                    float: right;
+                    line-height: 14px;
+                    color: #92979d !important;
+                    font-size: 10px;
+                    font-weight: 500;
+                    label {
+                        color: #b57bff;
+                        opacity: 0.5;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    .nextBtn {
+                        border: 0px solid transparent;
+                        padding: 0px 0px;
+                        border-radius: 10px;
+                        font-size: 22px;
+                        line-height: 1;
+                        display: inline-block;
+                        background: top;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+    // ------step 2---------
+    .addtwoSection {
+        padding: 48px 56px;
+        box-shadow: 0px 16px 24px #d9d8d8;
+        border-radius: 24px;
+        margin: 0px auto;
+        background-color: #ffffff;
+        // width: 900px;
+        .headingSec {
+            position: relative;
+            h2 {
+                font-size: 36px;
+                line-height: 48px;
+                font-weight: 500;
+                color: #000000;
+                font-family: $FontFamily;
+                margin-bottom: 0px;
+                text-transform: capitalize;
+            }
+            h5 {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                color: #91979d;
+                font-family: $FontFamily;
+                margin-bottom: 30px;
+                span {
+                    color: #000000;
+                }
+            }
+            p {
+                color: #91979d;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 29px;
+                font-family: $FontFamily;
+            }
+            .impactMaterix {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                color: #b57bff;
+                margin-top: -4px;
+                font-family: $FontFamily;
+            }
+        }
+        .matrixTableSec {
+            // background: #000000ba 0% 0% no-repeat padding-box;
+            // width: 100%;
+            // top: 70px;
+            // left: 272px;
+            // right: 0;
+            // height: 100vh;
+            // z-index: 1;
+            // position: fixed;
+            // overflow-y: auto;
+            position: absolute;
+            z-index: 1;
+            background: #fff;
+            // border: 1px solid;
+            right: 0;
+            border-radius: 24px;
+            box-shadow: 0px 5.27715px 10.5543px rgba(0, 0, 0, 0.12);
+            z-index: 9;
+            .panelSec {
+                padding: 18px 16px;
+                width: 443px;
+                // height: 360px;
+                // background: #ffffff;
+                // box-shadow: 0px 5.27715px 10.5543px rgba(0, 0, 0, 0.12);
+                // border-radius: 20px;
+                // position: absolute;
+                // transform: translate(-50%, -30%) !important;
+                // left: 59% !important;
+                // top: 68% !important;
+                h6 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+                p {
+                    font-weight: 300;
+                    font-size: 10px;
+                    line-height: 14px;
+                    color: #91979d;
+                    margin-bottom: 15px;
+                    span {
+                        color: #000;
+                        font-weight: 500;
+                    }
+                }
+                .impactMatrixTable {
+                    // border-radius: 15.8314px;
+                    border-style: hidden; 
+                    border-collapse: collapse;
+                    border-radius: 10px !important;
+                    
+                    thead {
+                        // border-radius: 24px 24px 0 0;
+                        tr {
+                            &:first-child {
+                                th {
+                                    &:first-child {
+                                        border-top-left-radius: 15.8314px;
+                                    }
+                                }
+                            }
+                            &:last-child {
+		
+                                th {
+                                    &:last-child {
+                                        border-top-right-radius: 15.8314px;
+                                    }
+                                }
+                            }
+                            th {
+                                font-weight: 500;
+                                font-size: 10px;
+                                line-height: 14px;
+                                border-bottom: 1px solid #ddd;
+                                &.grayBg {
+                                    background: linear-gradient(
+                                            0deg,
+                                            rgba(255, 255, 255, 0.75),
+                                            rgba(255, 255, 255, 0.75)
+                                        ),
+                                        #c2c9d1;
+                                    color: #000;
+                                }
+                                &.greenBg {
+                                    background: #3cc13b;
+                                    color: #fff;
+                                }
+                                &.redBg {
+                                    background: #f03738;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    tbody {
+                        tr {
+                            td {
+                                font-weight: 300;
+                                font-size: 10px;
+                                line-height: 14px;
+                                color: #000000;
+                                padding: 9px 5px;
+                                &.greenBgLight {
+                                    border-top: 1px solid #fff;
+                                    background: linear-gradient(
+                                            0deg,
+                                            rgba(255, 255, 255, 0.9),
+                                            rgba(255, 255, 255, 0.9)
+                                        ),
+                                        #3cc13b;
+                                    color: #3cc13b;
+                                }
+                                &.redBgLight {
+                                    border-top: 1px solid #fff;
+                                    background: linear-gradient(
+                                            0deg,
+                                            rgba(255, 255, 255, 0.9),
+                                            rgba(255, 255, 255, 0.9)
+                                        ),
+                                        #f03738;
+                                    color: #f03738;
+                                }
+                            }
+                            &:last-child {
+                                td {
+                                    &:first-child {
+                                        border-top-right-radius: 15.8314px;
+                                    }
+                                    &:last-child {
+                                        border-bottom-right-radius: 15.8314px;
+                                    }
+                                }
+                        }
+                        }
+                    }
+                }
+            }
+        }
+        .actionCardList {
+            .actionCard {
+                background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #c2c9d1;
+                border-radius: 24px;
+                padding: 24px;
+                margin-bottom: 30px;
+                .actionCardHeader {
+                    h4 {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 28px;
+                        font-family: $FontFamily;
+                        display: inline-block;
+                        margin-bottom: 0px;
+                    }
+                    figure {
+                        background: #000000;
+                        border-radius: 24px;
+                        text-align: center;
+                        padding: 0;
+                        line-height: 28px;
+                        width: 32px;
+                        height: 32px;
+                        float: right;
+                        svg {
+                            width: 24px;
+                        }
+                    }
+                }
+                .actionCardBody {
+                    margin-top: 16px;
+                    .customeFormGroup {
+                        margin-bottom: 24px;
+                        label {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-family: $FontFamily;
+                            margin-bottom: 7px;
+                            color: #91979d;
+                        }
+                        select {
+                            border-radius: 11.2558px;
+                            border: 1px solid #e1e4e8;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            padding: 4px 15px;
+                            width: 100%;
+                            height: 42px;
+                            color: #b57bff;
+                        }
+                        .optionDivSec {
+                            background: #fff;
+                            z-index: 999;
+                            position: relative;
+                            label {
+                                font-weight: 300;
+                                font-size: 10px;
+                                line-height: 14px;
+                                color: #000;
+                                font-family: $FontFamily;
+                                span {
+                                    font-weight: 500;
+                                }
+                            }
+                            .styledCheckbox {
+                                position: absolute; // take it out of document flow
+                                opacity: 0; // hide it
+
+                                & + label {
+                                    position: relative;
+                                    cursor: pointer;
+                                    padding: 0;
+                                    float: right;
+                                    margin-top: 5px;
+                                }
+
+                                // Box.
+                                & + label:before {
+                                    content: "";
+                                    margin-right: 10px;
+                                    display: inline-block;
+                                    vertical-align: text-top;
+                                    width: 14px;
+                                    height: 14px;
+                                    background: white;
+                                    border: 1.5px solid #b57bff;
+                                    border-radius: 3px;
+                                }
+                                // Box focus
+                                &:focus + label:before {
+                                    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+                                }
+
+                                // Box checked
+                                &:checked + label:before {
+                                    background: #b57bff;
+                                }
+
+                                // Disabled state label.
+                                &:disabled + label {
+                                    color: #b8b8b8;
+                                    cursor: auto;
+                                }
+
+                                // Disabled box.
+                                &:disabled + label:before {
+                                    box-shadow: none;
+                                    background: #ddd;
+                                }
+
+                                // Checkmark. Could be replaced with an image
+                                &:checked + label:after {
+                                    content: "";
+                                    position: absolute;
+                                    left: 2px;
+                                    top: 7px;
+                                    background: white;
+                                    width: 2px;
+                                    height: 2px;
+                                    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+                                        4px -6px 0 white, 4px -8px 0 white;
+                                    transform: rotate(45deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .stepSection {
+            margin: 17px 0 0;
+            .backStep {
+                float: left;
+                line-height: 14px;
+                color: #92979d !important;
+                font-size: 10px;
+                font-weight: 500;
+                label {
+                    color: #b57bff;
+                    opacity: 1;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                .backBtn {
+                    border: 0px solid transparent;
+                    padding: 0px 0px;
+                    border-radius: 10px;
+                    font-size: 22px;
+                    line-height: 1;
+                    display: inline-block;
+                    background: top;
+                    opacity: 0.5;
+                    svg {
+                        width: 28px;
+                    }
+                }
+            }
+            .nextStep {
+                float: right;
+                line-height: 14px;
+                color: #92979d !important;
+                font-size: 10px;
+                font-weight: 500;
+                label {
+                    color: #b57bff;
+                    opacity: 0.5;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+                .nextBtn {
+                    border: 0px solid transparent;
+                    padding: 0px 0px;
+                    border-radius: 10px;
+                    font-size: 22px;
+                    line-height: 1;
+                    display: inline-block;
+                    background: top;
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    // ------------end step 2--------
+    .tableSec {
+        padding: 30px;
+        position: relative;
+        table {
+            thead {
+                tr {
+                    th {
+                        color: #fff;
+                        vertical-align: middle;
+                        background-color: #000;
+                        font-family: $FontFamily;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding: 8px 16px;
+                        // position: relative;
+                        .dotIcon {
+                            background: url(../../../public/images/more-dots.png) no-repeat center center;
+                            background-size: 16px 16px;
+                            width: 16px;
+                            height: 16px;
+                            position: absolute;
+                            right: 4px;
+                            top: 9px;
+                            cursor: pointer;
+                        }
+                        &.purpleTh {
+                            background-color: #b57bff;
+                        }
+                        &:hover {
+                            background-color: #b57bff;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    background: #ffffff;
+                    td {
+                        vertical-align: middle;
+                        font-family: $FontFamily;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding: 16px 23px !important;
+                        border: 1px solid #f0f0f1;
+                        color: #616569;
+                        &.Maq {
+                            background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                                #c2c9d1;
+                        }
+                        &.editBtnSec {
+                            text-align: center;
+                            .editBtn {
+                                background: transparent;
+                            }
+                        }
+                        input {
+                            width: 73px;
+                            color: #b57bff;
+                            border: 0px solid transparent;
+                            background: transparent;
+                            font-family: $FontFamily;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                        &:first-child {
+                            font-weight: 500;
+                            color: #000;
+                        }
+                    }
+                    &:hover {
+                        background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), #b57bff;
+                        td {
+                            color: #000;
+                            &.Maq {
+                                background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+                                    #b57bff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .buttonSec {
+            margin-top: 40px;
+            button {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                height: 40px;
+                text-align: center;
+                font-family: $FontFamily;
+                border-radius: 100px;
+                margin: 0 8px;
+                border: 1px solid #b57bff;
+                padding: 0px 40px;
+                &.importBtn {
+                    color: #b57bff;
+                    background: #fff;
+                }
+                &.AddBtn {
+                    background: #b57bff;
+                    color: #fff;
+                }
+            }
+        }
+        .sideSection {
+            top: 0;
+            left: auto;
+            right: 0px;
+            bottom: auto;
+            transform: translate(0%, 0%);
+            margin: auto;
+            height: 100vh;
+            width: 289px;
+            z-index: 9999;
+            border-radius: 0px 0 0 0px;
+            position: absolute;
+            background: #ffffff;
+            padding: 0 0px;
+            overflow: hidden;
+            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.12);
+            -webkit-transition: all 0.5s ease 0.25s;
+            -moz-transition: all 0.5s ease 0.25s;
+            -o-transition: all 0.5s ease 0.25s;
+            -ms-transition: all 0.5s ease 0.25s;
+            transition: all 0.5s ease 0.25s;
+            .headerSec {
+                opacity: 1;
+                position: relative;
+                padding: 16px 24px;
+                border-bottom: 2px solid #f0f0f1;
+                h3 {
+                    text-align: left;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                    font-family: $FontFamily;
+                    margin-bottom: 0;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-bottom: 0px;
+                    font-family: $FontFamily;
+                }
+                h6 {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-family: $FontFamily;
+                    margin: 24px 0 0px;
+                    color: #b57bff;
+                }
+                .close {
+                    img {
+                        width: 16px;
+                    }
+                }
+            }
+            .contentSec {
+                padding: 18px 0px;
+                max-height: 71vh;
+                min-height: 70vh;
+                overflow-y: auto;
+                .card {
+                    border-bottom: 2px solid #F0F0F1;
+                    .cardHeader {
+                        border-bottom: none;
+                        background: transparent;
+                        padding: 0px;
+                        width: 100%;
+                        h2 {
+                            line-height: 0;
+                            width: 100%;
+                            .buttonSec {
+                                padding: 14px 16px 14px 24px;
+                                background-color: #fff;
+                                width: 100%;
+                                color: #444;
+                                text-align: left;
+                                position: relative;
+                                border: 0px;
+                                text-decoration: none;
+                                font-family: "Rubik", sans-serif;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 20px;
+                                border-radius: 0px;
+                                color: #000000;
+                                margin-top: 0px;
+                                figure {
+                                    background: #000000;
+                                    border-radius: 24px;
+                                    text-align: center;
+                                    padding: 0;
+                                    line-height: 23px;
+                                    width: 24px;
+                                    height: 24px;
+                                    float: left;
+                                    margin-bottom: 0;
+                                    img {
+                                        width: 18px;
+                                    }
+                                }
+                                span {
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    margin-left: 5px;
+                                    font-family: $FontFamily;
+                                    display: inline-block;
+                                    margin-bottom: 0px;
+                                }
+
+                                .fancyButton {
+                                    font-size: 13px;
+                                    line-height: 21px;
+                                    text-align: center;
+                                    transition: all 0.2s ease;
+                                    transform-origin: center;
+                                    position: absolute;
+                                    right: 16px;
+                                    width: 18px;
+                                    height: 18px;
+                                    border-radius: 50px;
+                                    padding: 0;
+                                    background-color: #fff;
+                                    text-align: center;
+                                    border: 1px solid transparent;
+                                    border: 1.5px solid #B57BFF;
+                                    opacity: 0.4;
+                                }
+                            }
+                        }
+                    }
+                    .cardBody{
+                        padding: 11px 24px;
+                        .customeFormGroup {
+                            margin-bottom: 24px;
+                            label {
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 16px;
+                                font-family: $FontFamily;
+                                margin-bottom: 7px;
+                                color: #91979d;
+                            }
+                            select {
+                                border-radius: 11.2558px;
+                                border: 1px solid #e1e4e8;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 20px;
+                                padding: 4px 15px;
+                                width: 100%;
+                                height: 42px;
+                                color: #b57bff;
+                            }
+                            .optionDivSec {
+                                background: #fff;
+                                z-index: 999;
+                                position: relative;
+                                label {
+                                    font-weight: 300;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    color: #000;
+                                    font-family: $FontFamily;
+                                    span {
+                                        font-weight: 500;
+                                    }
+                                }
+                                .styledCheckbox {
+                                    position: absolute; // take it out of document flow
+                                    opacity: 0; // hide it
+
+                                    & + label {
+                                        position: relative;
+                                        cursor: pointer;
+                                        padding: 0;
+                                        float: right;
+                                        margin-top: 5px;
+                                    }
+
+                                    // Box.
+                                    & + label:before {
+                                        content: "";
+                                        margin-right: 10px;
+                                        display: inline-block;
+                                        vertical-align: text-top;
+                                        width: 14px;
+                                        height: 14px;
+                                        background: white;
+                                        border: 1.5px solid #b57bff;
+                                        border-radius: 3px;
+                                    }
+                                    // Box focus
+                                    &:focus + label:before {
+                                        box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+                                    }
+
+                                    // Box checked
+                                    &:checked + label:before {
+                                        background: #b57bff;
+                                    }
+
+                                    // Disabled state label.
+                                    &:disabled + label {
+                                        color: #b8b8b8;
+                                        cursor: auto;
+                                    }
+
+                                    // Disabled box.
+                                    &:disabled + label:before {
+                                        box-shadow: none;
+                                        background: #ddd;
+                                    }
+
+                                    // Checkmark. Could be replaced with an image
+                                    &:checked + label:after {
+                                        content: "";
+                                        position: absolute;
+                                        left: 2px;
+                                        top: 7px;
+                                        background: white;
+                                        width: 2px;
+                                        height: 2px;
+                                        box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+                                            4px -6px 0 white, 4px -8px 0 white;
+                                        transform: rotate(45deg);
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    &.overlay {
+        position: relative;
+        &::after {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0px;
+            content: " ";
+            background: #00000063 0% 0% no-repeat padding-box;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+}

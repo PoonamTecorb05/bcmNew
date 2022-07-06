@@ -1,0 +1,776 @@
+$FontFamily: var(--fontFamity);
+
+.contentWrapper {
+    min-height: 227px;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 272px;
+    .bcpActivated {
+        padding: 31px 30px 32px 28px !important;
+        background-color: #fff;
+        h3 {
+            color: #000;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            font-family: $FontFamily;
+        }
+        .afterApproved {
+            background-color: #fff;
+        }
+        .addBtn {
+            width: 40.67px;
+            height: 40.67px;
+            background: #b57bff;
+            border-radius: 11px;
+            line-height: 43.67px;
+            padding: 0;
+            text-align: center;
+            margin-left: 25px;
+            img {
+                width: 15.67px;
+                margin-top: -7px;
+            }
+        }
+    }
+    .innerSec {
+        padding: 53px 44px !important;
+        .processSection {
+            box-shadow: 0px 16px 24px #d9d8d8;
+            border-radius: 24px;
+            margin: auto;
+            background-color: #ffffff;
+            width: 800px;
+            h1 {
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 48px;
+                font-family: $FontFamily;
+                margin-bottom: 2px;
+            }
+            p {
+                color: #91979d;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+                font-family: $FontFamily;
+                margin-bottom: 0px;
+            }
+            .buttonSec {
+                margin-top: 40px;
+                button {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    height: 40px;
+                    text-align: center;
+                    font-family: $FontFamily;
+                    border-radius: 100px;
+                    margin: 0 8px;
+                }
+            }
+            &.startProcessSection {
+                padding: 85px 28px 75px;
+                .imageSection {
+                    width: 181px;
+                    height: 187px;
+                    overflow: hidden;
+                    margin: 0 auto 20px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                h1 {
+                    color: #3e66fb;
+                }
+                .buttonSec {
+                    margin-top: 32px;
+                    button {
+                        width: 186px;
+                        border: 1px solid #b57bff;
+                        &.importBtn {
+                            color: #b57bff;
+                            background: #fff;
+                        }
+                        &.AddBtn {
+                            background: #b57bff;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            &.sucessFullProcessSection {
+                padding: 60px 28px 65px;
+                .imageSection {
+                    width: 321px;
+                    height: 220px;
+                    overflow: hidden;
+                    margin: 0 auto 12px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                h1 {
+                    color: #3cc13b;
+                }
+
+                .buttonSec {
+                    button {
+                        padding: 0 44px;
+                        border: 1px solid #3cc13b;
+                        &.finishBtn {
+                            color: #3cc13b;
+                            background: #fff;
+                        }
+                        &.AddBtn {
+                            background: #3cc13b;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .addSection {
+            box-shadow: 0px 16px 24px #d9d8d8;
+            border-radius: 24px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            width: 800px;
+            padding: 48px 56px 60px;
+            .headingSec {
+                h2 {
+                    font-size: 36px;
+                    line-height: 48px;
+                    font-weight: 500;
+                    color: #000000;
+                    font-family: $FontFamily;
+                    margin-bottom: 0px;
+                    text-transform: capitalize;
+                }
+                h5 {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #91979d;
+                    font-family: $FontFamily;
+                    margin-bottom: 30px;
+                    span {
+                        color: #000000;
+                    }
+                }
+                p {
+                    color: #91979d;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 29px;
+                    font-family: $FontFamily;
+                }
+            }
+            .formSec {
+                .customeFormGroup {
+                    margin-bottom: 24px;
+                    position: relative;
+                    label {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-family: $FontFamily;
+                        margin-bottom: 7px;
+                        span {
+                            font-weight: 500;
+                            color: #000;
+                        }
+                    }
+                    select {
+                        border-radius: 11.2558px;
+                        border: 1px solid #e1e4e8;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding: 4px 15px;
+                        width: 100%;
+                        height: 42px;
+                        color: #b57bff;
+                    }
+                    .optionDivSec {
+                        background: #fff;
+                        z-index: 999;
+                        position: relative;
+                        label {
+                            font-weight: 300;
+                            font-size: 10px;
+                            line-height: 14px;
+                            color: #000;
+                            font-family: $FontFamily;
+                            span {
+                                font-weight: 500;
+                            }
+                        }
+                        .styledCheckbox {
+                            position: absolute; // take it out of document flow
+                            opacity: 0; // hide it
+
+                            & + label {
+                                position: relative;
+                                cursor: pointer;
+                                padding: 0;
+                                float: right;
+                                margin-top: 5px;
+                            }
+
+                            // Box.
+                            & + label:before {
+                                content: "";
+                                margin-right: 10px;
+                                display: inline-block;
+                                vertical-align: text-top;
+                                width: 14px;
+                                height: 14px;
+                                background: white;
+                                border: 1.5px solid #b57bff;
+                                border-radius: 3px;
+                            }
+                            // Box focus
+                            &:focus + label:before {
+                                box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+                            }
+
+                            // Box checked
+                            &:checked + label:before {
+                                background: #b57bff;
+                            }
+
+                            // Disabled state label.
+                            &:disabled + label {
+                                color: #b8b8b8;
+                                cursor: auto;
+                            }
+
+                            // Disabled box.
+                            &:disabled + label:before {
+                                box-shadow: none;
+                                background: #ddd;
+                            }
+
+                            // Checkmark. Could be replaced with an image
+                            &:checked + label:after {
+                                content: "";
+                                position: absolute;
+                                left: 2px;
+                                top: 7px;
+                                background: white;
+                                width: 2px;
+                                height: 2px;
+                                box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+                                    4px -6px 0 white, 4px -8px 0 white;
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .stepSection {
+                margin: 17px 0 0;
+                .backStep {
+                    float: left;
+                    line-height: 14px;
+                    color: #92979d !important;
+                    font-size: 10px;
+                    font-weight: 500;
+                    label {
+                        color: #b57bff;
+                        opacity: 1;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    .backBtn {
+                        border: 0px solid transparent;
+                        padding: 0px 0px;
+                        border-radius: 10px;
+                        font-size: 22px;
+                        line-height: 1;
+                        display: inline-block;
+                        background: top;
+                        opacity: 0.5;
+                        svg {
+                            width: 28px;
+                        }
+                    }
+                }
+                .nextStep {
+                    float: right;
+                    line-height: 14px;
+                    color: #92979d !important;
+                    font-size: 10px;
+                    font-weight: 500;
+                    label {
+                        color: #b57bff;
+                        opacity: 0.5;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    .nextBtn {
+                        border: 0px solid transparent;
+                        padding: 0px 0px;
+                        border-radius: 10px;
+                        font-size: 22px;
+                        line-height: 1;
+                        display: inline-block;
+                        background: top;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+
+        // ------step 2---------
+        .addtwoSection {
+            padding: 48px 56px;
+            box-shadow: 0px 16px 24px #d9d8d8;
+            border-radius: 24px;
+            margin: 0px auto;
+            background-color: #ffffff;
+            .headingSec {
+                h2 {
+                    font-size: 36px;
+                    line-height: 48px;
+                    font-weight: 500;
+                    color: #000000;
+                    font-family: $FontFamily;
+                    margin-bottom: 0px;
+                    text-transform: capitalize;
+                }
+                h5 {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #91979d;
+                    font-family: $FontFamily;
+                    margin-bottom: 30px;
+                    span {
+                        color: #000000;
+                    }
+                }
+                p {
+                    color: #91979d;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 29px;
+                    font-family: $FontFamily;
+                }
+            }
+            .actionCardList {
+                .actionCard {
+                    // background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #c2c9d1;
+                    border-radius: 24px;
+                    // padding: 24px;
+                    margin-bottom: 30px;
+                    .checkboxWrapper {
+                        display: block;
+                        width: 100%;
+                        .checkboxInput {
+                            // Code to hide the input
+                            clip: rect(0 0 0 0);
+                            clip-path: inset(100%);
+                            height: 1px;
+                            overflow: hidden;
+                            position: absolute;
+                            white-space: nowrap;
+                            width: 1px;
+                            &:checked + .checkboxTile {
+                                // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                                background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                                    #b57bff;
+                                &:before {
+                                    // transform: scale(1);
+                                    opacity: 1;
+                                    background-image: url("../../../public/images/Tickfill.png");
+                                    background-size: 19px;
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 50%;
+                                }
+                                .checkboxIcon,
+                                .checkboxLabel {
+                                    color: #000;
+                                }
+                            }
+                            &:focus + .checkboxTile {
+                                &:before {
+                                    // transform: scale(1);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .checkboxTile {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: 86px;
+                            transition: 0.15s ease;
+                            cursor: pointer;
+                            position: relative;
+                            text-align: left;
+                            background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                                #c2c9d1;
+                            border-radius: 24px;
+                            padding: 16px 24px;
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                display: block;
+                                width: 24px;
+                                height: 24px;
+                                right: 16px;
+                                bottom: 18px;
+                                opacity: 1;
+                                // transform: scale(0);
+                                transition: 0.25s ease;
+                                background-image: url("../../../public/images/Ticksquare.png");
+                                background-size: 19px;
+                                background-repeat: no-repeat;
+                                background-position: 50% 50%;
+                            }
+                            &:hover {
+                                border-color: #2260ff;
+                                &:before {
+                                    // transform: scale(1);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .checkboxIcon {
+                            font-weight: 300;
+                            font-size: 10px;
+                            line-height: 14px;
+                            font-family: $FontFamily;
+                            color: #000000;
+                        }
+                        .checkboxLabel {
+                            transition: 0.375s ease;
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            width: 72%;
+                            display: block;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            .stepSection {
+                margin: 17px 0 0;
+                .backStep {
+                    float: left;
+                    line-height: 14px;
+                    color: #92979d !important;
+                    font-size: 10px;
+                    font-weight: 500;
+                    label {
+                        color: #b57bff;
+                        opacity: 1;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    .backBtn {
+                        border: 0px solid transparent;
+                        padding: 0px 0px;
+                        border-radius: 10px;
+                        font-size: 22px;
+                        line-height: 1;
+                        display: inline-block;
+                        background: top;
+                        opacity: 0.5;
+                        svg {
+                            width: 28px;
+                        }
+                    }
+                }
+                .nextStep {
+                    float: right;
+                    line-height: 14px;
+                    color: #92979d !important;
+                    font-size: 10px;
+                    font-weight: 500;
+                    label {
+                        color: #b57bff;
+                        opacity: 0.5;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    .nextBtn {
+                        border: 0px solid transparent;
+                        padding: 0px 0px;
+                        border-radius: 10px;
+                        font-size: 22px;
+                        line-height: 1;
+                        display: inline-block;
+                        background: top;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+        // ------------end step 2--------
+    }
+    // ------------Table List Screen--------
+    .tableSec {
+        padding: 30px;
+        position: relative;
+        table {
+            thead {
+                tr {
+                    th {
+                        color: #fff;
+                        vertical-align: middle;
+                        background-color: #000;
+                        font-family: $FontFamily;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding: 8px 16px;
+                        // position: relative;
+                        .dotIcon {
+                            background: url(../../../public/images/more-dots.png) no-repeat center center;
+                            background-size: 16px 16px;
+                            width: 16px;
+                            height: 16px;
+                            position: absolute;
+                            right: 4px;
+                            top: 9px;
+                            cursor: pointer;
+                        }
+                        &:hover {
+                            background-color: #b57bff;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    background: #ffffff;
+                    &:hover {
+                        // background: linear-gradient(0deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), #b57bff;
+                        td {
+                            // color: #000;
+                        }
+                    }
+                    td {
+                        vertical-align: middle;
+                        font-family: $FontFamily;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding: 16px 23px !important;
+                        border: 1px solid #f0f0f1;
+                        color: #616569;
+                        &.process {
+                            color: #b57bff;
+                            &.purpleBorder{
+                                // border: 1px solid #b57bff;
+                                background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #B57BFF; 
+                            }
+                        }
+                        &:first-child {
+                            font-weight: 500;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+        .buttonSec {
+            margin-top: 40px;
+            button {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                height: 40px;
+                text-align: center;
+                font-family: $FontFamily;
+                border-radius: 100px;
+                margin: 0 8px;
+                border: 1px solid #b57bff;
+                padding: 0px 40px;
+                &.importBtn {
+                    color: #b57bff;
+                    background: #fff;
+                }
+                &.AddBtn {
+                    background: #b57bff;
+                    color: #fff;
+                }
+            }
+        }
+
+        .sideSection {
+            top: 0;
+            left: auto;
+            right: 0px;
+            bottom: auto;
+            transform: translate(0%, 0%);
+            margin: auto;
+            height: 100vh;
+            width: 289px;
+            z-index: 9999;
+            border-radius: 0px 0 0 0px;
+            position: absolute;
+            background: #ffffff;
+            padding: 0 0px;
+            overflow: hidden;
+            box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.12);
+            -webkit-transition: all .5s ease .25s;
+            -moz-transition: all .5s ease .25s;
+            -o-transition: all .5s ease .25s;
+            -ms-transition: all .5s ease .25s;
+            transition: all .5s ease .25s;
+            .headerSec {
+                opacity: 1;
+                position: relative;
+                padding: 16px 24px;
+                border-bottom: 2px solid #F0F0F1;
+                h3 {
+                    text-align: left;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 28px;
+                    font-family: $FontFamily;
+                    margin-bottom: 0;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 20px;
+                    margin-bottom: 0px;
+                    font-family: $FontFamily;
+                }
+                h6 {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-family: $FontFamily;
+                    margin: 24px 0 0px;
+                    color: #B57BFF;
+                }
+                .close {
+                    img {
+                        width: 16px;
+                    }
+                }
+            }
+            .contentSec{
+                padding: 18px 17px;
+                max-height: 71vh;
+                min-height: 70vh;
+                overflow-y: auto;
+                .actionCard {
+                    // background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #c2c9d1;
+                    border-radius: 24px;
+                    // padding: 24px;
+                    margin-bottom: 30px;
+                    .checkboxWrapper {
+                        display: block;
+                        width: 100%;
+                        .checkboxInput {
+                            // Code to hide the input
+                            clip: rect(0 0 0 0);
+                            clip-path: inset(100%);
+                            height: 1px;
+                            overflow: hidden;
+                            position: absolute;
+                            white-space: nowrap;
+                            width: 1px;
+                            &:checked + .checkboxTile {
+                                // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                                background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                                    #b57bff;
+                                &:before {
+                                    // transform: scale(1);
+                                    opacity: 1;
+                                    background-image: url("../../../public/images/Tickfill.png");
+                                    background-size: 19px;
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 50%;
+                                }
+                                .checkboxIcon,
+                                .checkboxLabel {
+                                    color: #000;
+                                }
+                            }
+                            &:focus + .checkboxTile {
+                                &:before {
+                                    // transform: scale(1);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .checkboxTile {
+                            display: flex;
+                            flex-direction: column;
+                            width: 100%;
+                            height: 86px;
+                            transition: 0.15s ease;
+                            cursor: pointer;
+                            position: relative;
+                            text-align: left;
+                            background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                                #c2c9d1;
+                            border-radius: 24px;
+                            padding: 16px 24px;
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                display: block;
+                                width: 24px;
+                                height: 24px;
+                                right: 16px;
+                                bottom: 18px;
+                                opacity: 1;
+                                // transform: scale(0);
+                                transition: 0.25s ease;
+                                background-image: url("../../../public/images/Ticksquare.png");
+                                background-size: 19px;
+                                background-repeat: no-repeat;
+                                background-position: 50% 50%;
+                            }
+                            &:hover {
+                                border-color: #2260ff;
+                                &:before {
+                                    // transform: scale(1);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .checkboxIcon {
+                            font-weight: 300;
+                            font-size: 10px;
+                            line-height: 14px;
+                            font-family: $FontFamily;
+                            color: #000000;
+                        }
+                        .checkboxLabel {
+                            transition: 0.375s ease;
+                            text-align: left;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            width: 72%;
+                            display: block;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

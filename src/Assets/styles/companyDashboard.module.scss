@@ -1,0 +1,338 @@
+.companyDashboard {
+	.companyStatus {
+		margin-left: -190px;
+		// position: relative;
+		overflow: hidden;
+		.companyStatusLogo {
+			margin-bottom: 30px;
+			width: 835px;
+			.companyHeading {
+				h4 {
+					color: #202632;
+					font-weight: 500;
+					margin-bottom: 3px;
+					font-size: 36px;
+					line-height: 48px;
+				}
+				h6 {
+					color: #92979d;
+					margin-bottom: 0;
+					font-size: 24px;
+					font-weight: 400;
+					line-height: 32px;
+				}
+			}
+			.companyLogo {
+				position: absolute;
+				right: 16px;
+				z-index: 999;
+				top: 31px;
+				span {
+					height: 96px;
+					width: 96px;
+					border-radius: 50%;
+					position: relative;
+					display: inline-block;
+					background-color: #ffffff;
+					display: -webkit-box;
+					display: -ms-flexbox;
+					display: flex;
+					img {
+						margin: auto;
+						width: 70px;
+					}
+				}
+			}
+		}
+		.progressBarslider {
+			position: relative;
+			z-index: 99;
+			display: flex;
+			width: 100%;
+			margin-top: 16px;
+			padding-bottom: 6px;
+			overflow: auto;
+			.allCard {
+				// width: 261px;
+				padding: 0 8px;
+				.processCards {
+					background-color: #ffffff;
+					border-radius: 15px;
+					padding: 20px;
+					max-width: 265px;
+					h3 {
+						color: #171717;
+						font-weight: 500;
+						margin-bottom: 5px;
+						font-size: 20px;
+					}
+					h4 {
+						color: #3e66fb;
+						font-weight: 400;
+						margin-bottom: 10px;
+						font-size: 18px;
+					}
+					ul {
+						list-style: none;
+						padding: 0;
+						margin-bottom: 25px;
+						li {
+							position: relative;
+							color: #3e66fb;
+							font-size: 12px;
+							font-weight: 400;
+							line-height: 20px;
+							padding-left: 20px;
+							&::before {
+								content: "";
+								display: block;
+								background-color: #3e66fb;
+								height: 12px;
+								width: 12px;
+								position: absolute;
+								left: 0;
+								top: 50%;
+								-webkit-transform: translateY(-50%);
+								transform: translateY(-50%);
+								border-radius: 50%;
+							}
+							&:first-child {
+								color: #9eb3fd;
+								&::before {
+									background-color: #9eb3fd;
+								}
+							}
+						}
+					}
+					.percents {
+						display: -webkit-box;
+						display: -ms-flexbox;
+						display: flex;
+						span {
+							color: #3cc13b;
+							font-size: 14px;
+							margin-left: 3px;
+							font-weight: 300;
+						}
+						&.critical {
+							span {
+								color: #f03738;
+							}
+						}
+					}
+					.pieChart {
+						margin-top: -30px;
+						margin-right: -8px;
+						padding-left: 25px;
+						canvas {
+							width: 110px !important;
+							height: 110px !important;
+						}
+					}
+					&.disableCard {
+						h4 {
+							color: #000;
+						}
+						ul {
+							li {
+								color: #91979d;
+								&::before {
+									background-color: #91979d;
+								}
+								&:first-child {
+									color: #c2c9d1;
+									&::before {
+										background-color: #c2c9d1;
+									}
+								}
+							}
+						}
+						.percents {
+							span {
+								color: #c2c9d1;
+							}
+						}
+						// .pieChart {
+						// 	canvas {
+						// 		border-radius: 50%;
+						// 		background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+						// 			#c2c9d1;
+						// 	}
+						// }
+					}
+				}
+			}
+		}
+	}
+}
+// -----------------Company Status-----------------
+.dashboardBottomList {
+	.listSec {
+		box-shadow: 0px 6px 12px #ecebeb;
+		background-color: #ffffff;
+		border-radius: 12px;
+		padding: 15px 20px;
+		-webkit-transition: all 0.2s linear 0s;
+		transition: all 0.2s linear 0s;
+		margin-bottom: 32px;
+		&:hover {
+			box-shadow: 0px 6px 12px #d7d7d7;
+		}
+		.dashboardTitle {
+			font-size: 20px !important;
+			line-height: 62px !important;
+			font-weight: 500;
+			height: 64px !important;
+			width: 64px !important;
+			color: #fff;
+			text-align: center;
+			background-color: #9eb2fd;
+			border-radius: 50px;
+			margin: 0px;
+		}
+		h5 {
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 28px;
+			color: #2f3c4c !important;
+		}
+		.idSec {
+			font-size: 16px;
+			line-height: 24px;
+			color: #92979d !important;
+			font-weight: 400;
+		}
+		.dateSec {
+			font-size: 16px;
+			line-height: 24px;
+			color: #92979d !important;
+			font-weight: 400;
+		}
+		.satusSec {
+			font-size: 16px;
+			line-height: 24px;
+			color: #000;
+		}
+		.finishSetupBtn,
+		.viewBtn {
+			padding: 7px 22px;
+			min-width: auto;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			background-color: #b57bff;
+			color: #fff;
+			margin-left: 11px;
+			border-radius: 100px;
+			&:hover {
+				color: #fff;
+			}
+		}
+		.viewBtn {
+			margin-left: 0px;
+		}
+		.manageBtn {
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: 500;
+			display: inline-block;
+			margin-right: 45px;
+			color: #b57bff;
+			background: transparent;
+			padding: 0;
+		}
+	}
+	.addBtn {
+		width: 46.67px;
+		height: 46.67px;
+		background: #b57bff;
+		border-radius: 13px;
+		line-height: 46.67px;
+		padding: 0;
+		img {
+			width: 18.67px;
+			margin-top: -3px;
+		}
+	}
+}
+
+// ------------ceoBottom------------------------------
+.ceoBottom {
+	.ApprovalSec {
+		background-color: #f0f2f3;
+		padding: 22px 25px;
+		h5 {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 32px;
+			margin-bottom: 0px;
+			color: #3e66fb;
+		}
+		.approvedBtn {
+			width: 105px;
+			height: 40px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.CardSection {
+		margin-top: 25px;
+		display: flex;
+		margin-bottom: 50px;
+		.departmentCard {
+			width: 25%;
+			padding: 0 8px;
+			.innerSec {
+				background: #ffffff;
+				box-shadow: 0px 6px 12px #ecebeb;
+				border-radius: 16px;
+				padding: 24px;
+				height: 261px;
+				width: 261px;
+				position: relative;
+				h4 {
+					font-size: 36px;
+					font-weight: 500;
+				}
+				.dateDiv {
+					position: absolute;
+					bottom: 0;
+					display: flex;
+					justify-content: space-between;
+					width: 100%;
+					align-items: center;
+					.dateText {
+						span {
+							font-family: Rubik;
+							font-style: normal;
+							font-weight: 400;
+							font-size: 16px;
+							line-height: 24px;
+							color: #c2c9d1;
+						}
+						p {
+							font-family: Rubik;
+							font-style: normal;
+							font-weight: 500;
+							font-size: 20px;
+							line-height: 28px;
+							color: #3e66fb;
+						}
+					}
+					a {
+						position: relative;
+						right: 40px;
+						top: -7px;
+						width: 48px;
+						height: 48px;
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

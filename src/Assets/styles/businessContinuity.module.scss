@@ -1,0 +1,403 @@
+$FontFamily: var(--fontFamity);
+.contentWrapper {
+    min-height: 227px;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 272px;
+    .bcpActivated {
+        padding: 31px 30px 32px 28px !important;
+        background-color: #fff;
+        h3 {
+            color: #000;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            font-family: $FontFamily;
+        }
+        .afterApproved {
+            background-color: #fff;
+        }
+    }
+    .innerSec {
+        padding: 53px 44px !important;
+        .panelSection {
+            background-color: #ffffff;
+            padding: 30px 28px;
+            border-radius: 24px;
+            h2 {
+                font-size: 36px;
+                line-height: 48px;
+                font-weight: 500;
+                color: #000000;
+                font-family: $FontFamily;
+                margin-bottom: 4px;
+            }
+            h6 {
+                color: #c2c9d1;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 400;
+                margin-bottom: 29px;
+                font-family: $FontFamily;
+            }
+            .accordionSec {
+                border-radius: 16px;
+                border: 1px solid #e0e4e8;
+                overflow-x: hidden;
+                .card {
+                    margin-bottom: 2px;
+                    &:last-child {
+                        margin-bottom: 0px;
+                    }
+                    .cardHeader {
+                        border-bottom: none;
+                        background: transparent;
+                        padding: 0px;
+                        width: 100%;
+                        h2 {
+                            width: 100%;
+                            line-height: 0px;
+                            .buttonSec {
+                                padding: 14px 16px 14px 24px;
+                                background-color: #fcf6ff;
+                                width: 100%;
+                                color: #444;
+                                text-align: left;
+                                position: relative;
+                                border: 0px;
+                                text-decoration: none;
+                                font-family: $FontFamily;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                border-radius: 0px;
+                                color: #000000;
+                                &:hover {
+                                    text-decoration: none;
+                                }
+                                .title {
+                                    display: inline-block;
+                                    width: 20%;
+                                }
+                                .badges {
+                                    color: #fff;
+                                    opacity: 1;
+                                    padding: 1px 8px;
+                                    border-radius: 50px;
+                                    top: 0px;
+                                    display: inline-block;
+                                    position: relative;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    font-family: $FontFamily;
+                                    &.timebadges {
+                                        background-color: #92979d;
+                                    }
+                                    &.spfbadges {
+                                        background: #f03738;
+                                    }
+                                    &.staff {
+                                        background: #b57bff;
+                                    }
+                                }
+
+                                .rightSec {
+                                    display: inline-block;
+                                    text-align: right;
+                                    float: right;
+                                    .tickSec {
+                                        width: 16px;
+                                        height: 16px;
+                                        border-radius: 3px;
+                                        background: #3cc13b;
+                                        line-height: 16px;
+                                        text-align: center;
+                                        display: inline-block;
+                                        margin-right: 5px;
+                                        img {
+                                            width: 8px;
+                                        }
+                                    }
+                                    h6 {
+                                        color: #000;
+                                        font-size: 15px;
+                                        line-height: 23px;
+                                        font-weight: 500;
+                                        margin-bottom: 0;
+                                        display: inline-block;
+                                        font-family: $FontFamily;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:first-child {
+                        .cardHeader {
+                            h2 {
+                                .buttonSec {
+                                    border-radius: 16px 16px 0px 0px;
+                                }
+                            }
+                        }
+                    }
+                    .cardBody {
+                        padding: 25px 24px;
+                        .startProcess {
+                            h4 {
+                                margin-bottom: 0;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 28px;
+                                font-family: $FontFamily;
+                            }
+                            p {
+                                color: #6c757d;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-family: $FontFamily;
+                                margin-bottom: 0;
+                            }
+                            .recoveryBtn {
+                                padding: 7px 16px;
+                                border-radius: 100px;
+                                background: #b57bff;
+                                color: #fff;
+                                text-transform: capitalize;
+                                font-weight: 500;
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-family: $FontFamily;
+                                margin-top: 23px;
+                            }
+                        }
+                        .processSection {
+                            .headingSec {
+                                h5 {
+                                    margin-bottom: 3px;
+                                    color: #6c757d;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    font-family: $FontFamily;
+                                }
+                                p {
+                                    color: #616569;
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 16px;
+                                    margin-bottom: 29px;
+                                    font-family: $FontFamily;
+                                }
+                            }
+                            .recoverySteps {
+                                position: relative;
+                                .addBtn {
+                                    width: 30px;
+                                    height: 30px;
+                                    position: absolute;
+                                    right: 0px;
+                                    top: -1px;
+                                    transition: all 0.2s ease;
+                                    background: #b57bff;
+                                    border-radius: 8px;
+                                    line-height: 33.67px;
+                                    padding: 0;
+                                    z-index: 9;
+                                    img {
+                                        width: 11.67px;
+                                        margin-top: -7px;
+                                    }
+                                }
+                                .recoveryStepsList {
+                                    margin: 1.5rem 0 0rem 0;
+                                    padding: 0;
+                                    position: relative;
+                                    list-style-type: none;
+                                    display: -webkit-box;
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    -ms-flex-wrap: nowrap;
+                                    flex-wrap: nowrap;
+                                    overflow: hidden;
+                                    overflow-x: auto;
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        left: 0;
+                                        top: 14px;
+                                        width: 100%;
+                                        height: 1px;
+                                        background-color: #f0f1f3;
+                                        z-index: 1;
+                                    }
+                                    .liCounter {
+                                        margin: 0 24px 0 0;
+                                        padding: 0;
+                                        list-style-type: none;
+                                        display: block;
+                                        width: 220px;
+                                        min-width: 220px;
+                                        position: relative;
+                                        .listcounter {
+                                            margin-bottom: 8px;
+                                            position: relative;
+                                            z-index: 1;
+                                            width: 22px;
+                                            height: 22px;
+                                            border-radius: 30px;
+                                            line-height: 22px;
+                                            text-align: center;
+                                            display: inline-block;
+                                            background-color: #e0e4e8;
+                                            color: #000;
+                                            font-weight: 500;
+                                            font-size: 12px;
+                                            font-family: $FontFamily;
+                                        }
+                                        &::before {
+                                            content: "";
+                                            position: absolute;
+                                            width: 101%;
+                                            height: 1px;
+                                            background-color: #f0f1f3;
+                                            top: 14px;
+                                            left: 10%;
+                                            z-index: 0;
+                                        }
+                                        .dataSec {
+                                            min-width: 220px;
+                                            h6.blueColor {
+                                                color: #3e66fb;
+                                                margin-top: 16px;
+                                                margin-bottom: 8px;
+                                                font-weight: 500;
+                                                font-size: 14px;
+                                                line-height: 20px;
+                                                font-family: $FontFamily;
+                                                span {
+                                                    font-size: 14px;
+                                                    line-height: 20px;
+                                                    font-weight: 500;
+                                                    margin-right: 6px;
+                                                }
+                                            }
+                                            .contentArea {
+                                                height: auto;
+                                                .actionTitleDiv {
+                                                    margin-bottom: 4px;
+                                                    font-weight: 500;
+                                                    font-size: 12px;
+                                                    line-height: 16px;
+                                                    font-family: $FontFamily;
+                                                }
+                                                .actionDescriptionDiv {
+                                                    color: #92979d !important;
+                                                    height: 80px;
+                                                    overflow-y: scroll;
+                                                    font-weight: 400;
+                                                    font-size: 10px;
+                                                    line-height: 14px;
+                                                    font-family: $FontFamily;
+                                                }
+                                            }
+                                            .textPurple {
+                                                color: #b57bff;
+                                                .actionUserName {
+                                                    font-weight: 400;
+                                                    margin-left: 6px;
+                                                    color: #b57bff;
+                                                    font-size: 10px;
+                                                    line-height: 14px;
+                                                    font-family: $FontFamily;
+                                                }
+                                            }
+                                        }
+                                        // -------form sec-------
+                                        .FormSection {
+                                            margin-top: 14px;
+                                            .customeFormGroup {
+                                                margin-bottom: 8px;
+                                                position: relative;
+                                                input,
+                                                textarea {
+                                                    border: 1px solid #e1e4e8;
+                                                    border-radius: 4px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    font-size: 10px;
+                                                    line-height: 14px;
+                                                    padding: 4px 6px;
+                                                    color: #ddd;
+                                                    width: 100%;
+                                                    &::placeholder {
+                                                        color: #92979d;
+                                                    }
+                                                    &.actionTimeElement {
+                                                        color: #3e66fb;
+                                                    }
+                                                    &.actionTitleDiv {
+                                                        color: #000;
+                                                    }
+                                                    &.actionDescriptionDiv {
+                                                        color: #92979d;
+                                                    }
+                                                    &.actionUserName {
+                                                        color: #b57bff;
+                                                    }
+                                                }
+                                                textarea {
+                                                    height: 56px;
+                                                    margin-bottom: 8px;
+                                                }
+                                                &.ownerInput {
+                                                    img {
+                                                        position: absolute;
+                                                        top: 8px;
+                                                        left: 6px;
+                                                        width: 16px;
+                                                    }
+                                                    input {
+                                                        padding-left: 22px;
+                                                        height: 100%;
+                                                    }
+                                                }
+                                            }
+                                            .time {
+                                                width: 97px;
+                                                margin-bottom: 6px;
+                                            }
+                                            button {
+                                                width: 58px;
+                                                height: 18px;
+                                                background: #3cc13b;
+                                                border-radius: 100px;
+                                                font-weight: 400;
+                                                font-size: 10px;
+                                                line-height: 17px;
+                                                color: #fff;
+                                                padding: 0px 0px 3px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .submitDetailBtn {
+            width: 157px;
+            height: 40px;
+            background: #3cc13b;
+            border-radius: 100px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            padding: 0px 0px 0px;
+            margin-top: 40px;
+        }
+    }
+}

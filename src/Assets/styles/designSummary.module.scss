@@ -1,0 +1,305 @@
+$FontFamily: var(--fontFamity);
+.contentWrapper {
+	min-height: 227px;
+	transition: margin-left 0.3s ease-in-out;
+	margin-left: 272px;
+	.bcpActivated {
+		padding: 31px 30px 32px 28px !important;
+		background-color: #fff;
+		h3 {
+			color: #000;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 32px;
+			font-family: "Rubik", sans-serif !important;
+		}
+		.afterApproved {
+			background-color: #fff;
+		}
+	}
+	.innerSec {
+		.departmentSummary {
+			background-color: #ffffff;
+			padding: 30px 28px;
+			border-radius: 16px;
+			min-height: 450px;
+			overflow-y: auto;
+			max-height: 451px;
+			.moduleDiv {
+				border-bottom: 1px solid #c2c9d147;
+				margin-bottom: 23px;
+				padding-bottom: 14px;
+				h4 {
+					font-size: 20px;
+					font-weight: 500;
+					margin-bottom: 5px;
+				}
+				h6 {
+					font-size: 14px;
+					color: #3e66fba3;
+					font-weight: 400;
+					span {
+						font-weight: 500;
+						color: #3e66fb;
+					}
+					&.critcal{
+						color: #F03738;
+						span{
+							color: #F03738;	
+						}
+					}
+				}
+
+				.multiProgess {
+					display: flex;
+					width: 100%;
+					margin-top: 16px;
+					padding-bottom: 6px;
+					overflow: auto;
+					.progressDiv {
+						margin: 0px 15px 0px 0px;
+						min-width: 165px;
+						.progessBar {
+							width: 162px;
+							background: #e1e4e8;
+							height: 12px;
+							border-radius: 100px;
+							&.stepOne {
+								background: #ceefce;
+							}
+							&.stepTwo {
+								background: #9de09d;
+							}
+							&.stepThree {
+								background: #3cc13b;
+							}
+							&.stepFour {
+								background: #2d912c;
+							}
+							&.stepFive {
+								background: #1e611d;
+							}
+						}
+						span {
+							font-weight: 400;
+							font-size: 12px;
+							color: #92979d;
+							line-height: 16px;
+						}
+						h6 {
+							font-weight: 500;
+							font-size: 16px;
+							line-height: 13px;
+							display: flex;
+							align-items: center;
+							color: #3cc13b;
+							margin-bottom: 0;
+							&.stepFive {
+								color: #1e611d;
+							}
+							&.critical{
+								color: #F03738;
+							}
+							&.disable{
+								color: #92979d;
+							}
+						}
+					}
+				}
+			}
+		}
+		.departmentSummaryCart {
+			margin-top: 25px;
+			display: flex;
+			padding-bottom: 6px;
+			overflow: auto;
+			.allCard {
+				width: 25%;
+				padding: 0 8px;
+				.processCards {
+					background-color: #ffffff;
+					border-radius: 15px;
+					padding: 20px;
+					max-width: 265px;
+					h3 {
+						color: #171717;
+						font-weight: 500;
+						margin-bottom: 5px;
+						font-size: 20px;
+					}
+					h4 {
+						color: #3e66fb;
+						font-weight: 400;
+						margin-bottom: 10px;
+						font-size: 18px;
+					}
+					ul {
+						list-style: none;
+						padding: 0;
+						margin-bottom: 25px;
+						li {
+							position: relative;
+							color: #3e66fb;
+							font-size: 12px;
+							font-weight: 400;
+							line-height: 20px;
+							padding-left: 20px;
+							&::before {
+								content: "";
+								display: block;
+								background-color: #3e66fb;
+								height: 12px;
+								width: 12px;
+								position: absolute;
+								left: 0;
+								top: 50%;
+								-webkit-transform: translateY(-50%);
+								transform: translateY(-50%);
+								border-radius: 50%;
+							}
+							&:first-child {
+								color: #9eb3fd;
+								&::before {
+									background-color: #9eb3fd;
+								}
+							}
+						}
+					}
+					.percents {
+						display: -webkit-box;
+						display: -ms-flexbox;
+						display: flex;
+						span {
+							color: #3cc13b;
+							font-size: 14px;
+							margin-left: 3px;
+							font-weight: 300;
+						}
+					}
+					.pieChart {
+						margin-top: -30px;
+						margin-right: -8px;
+						padding-left: 25px;
+						canvas {
+							width: 110px !important;
+							height: 110px !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.departmentView {
+	.bcpActivated {
+		padding: 31px 30px 32px 28px !important;
+		background-color: #fff;
+		h3 {
+			color: #000;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 32px;
+			font-family: $FontFamily;
+		}
+		.afterApproved {
+			background-color: #fff;
+		}
+		.addBtn {
+			width: 40.67px;
+			height: 40.67px;
+			background: #b57bff;
+			border-radius: 11px;
+			line-height: 43.67px;
+			padding: 0;
+			text-align: center;
+			margin-left: 25px;
+			img {
+				width: 15.67px;
+				margin-top: -7px;
+			}
+		}
+	}
+
+	// -----------------Company Status-----------------
+	.dashboardBottomList {
+		margin-top: 41px;
+		.listSec {
+			box-shadow: 0px 6px 12px #ecebeb;
+			background-color: #ffffff;
+			border-radius: 12px;
+			padding: 15px 20px;
+			-webkit-transition: all 0.2s linear 0s;
+			transition: all 0.2s linear 0s;
+			margin-bottom: 32px;
+			&:hover {
+				box-shadow: 0px 6px 12px #d7d7d7;
+			}
+			.dashboardTitle {
+				font-size: 20px !important;
+				line-height: 62px !important;
+				font-weight: 500;
+				height: 64px !important;
+				width: 64px !important;
+				color: #fff;
+				text-align: center;
+				background-color: #9eb2fd;
+				border-radius: 50px;
+				margin: 0px;
+			}
+			h5 {
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 28px;
+				color: #2f3c4c !important;
+			}
+			.idSec {
+				font-size: 16px;
+				line-height: 24px;
+				color: #92979d !important;
+				font-weight: 400;
+			}
+			.dateSec {
+				font-size: 16px;
+				line-height: 24px;
+				color: #92979d !important;
+				font-weight: 400;
+			}
+			.statusSec {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 24px;
+				text-align: center;
+				color: #3e66fb;
+			}
+			.finishSetupBtn,
+			.viewBtn {
+				padding: 7px 22px;
+				min-width: auto;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 24px;
+				background-color: #b57bff;
+				color: #fff;
+				margin-left: 11px;
+				border-radius: 100px;
+				&:hover {
+					color: #fff;
+				}
+			}
+			.viewBtn {
+				margin-left: 0px;
+			}
+			.manageBtn {
+				font-size: 16px;
+				line-height: 24px;
+				font-weight: 500;
+				display: inline-block;
+				margin-right: 45px;
+				color: #b57bff;
+				background: transparent;
+				padding: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,855 @@
+.contentWrapper {
+    min-height: 227px;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 272px;
+    .bcpActivated {
+        padding: 37px 30px 32px 28px !important;
+        background-color: #fff;
+        h3 {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .colorRed {
+            h3 {
+                color: #f03738;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                img {
+                    margin-left: 10px;
+                    width: 33px;
+                }
+            }
+        }
+        .warning{
+            h3{
+                color: #F3BB1C;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 32px;
+                img {
+                    margin-left: 10px;
+                    width: 33px;
+                }
+            }
+        }
+    }
+    .innerSec {
+        padding: 53px 44px !important;
+        .callFor {
+            background-color: #ffffff;
+            padding: 30px 40px 40px;
+            border-radius: 24px;
+            h2 {
+                font-size: 36px;
+                line-height: 48px;
+                font-weight: 500;
+                color: #000000;
+                margin-bottom: 4px;
+            }
+            h6 {
+                color: #c2c9d1;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 400;
+                margin-bottom: 29px;
+            }
+            p.success {
+                color: #92979d;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32px;
+            }
+            .goPrevious {
+                color: #b57bff !important;
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                display: inline-block;
+                border: 1px solid #b57bff;
+                padding: 8px 22px;
+                border-radius: 30px;
+                text-align: center;
+                width: 140px;
+                margin-top: -10px;
+            }
+            .tableSec {
+                border-radius: 16px;
+                border: 1px solid #e1e4e8;
+                table {
+                    width: 100%;
+                    border-radius: 16px;
+                    background-color: #f9fafa;
+                    overflow: hidden;
+                    border: 0px solid #f9fafa;
+                    tbody {
+                        tr {
+                            border-bottom: 2px solid #ffffff;
+                            &:last-child {
+                                border-bottom: 0;
+                            }
+                            td {
+                                padding: 14px 20px;
+                                -webkit-box-align: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                &.itemName {
+                                    color: #000000;
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    font-weight: 400;
+                                    min-width: 130px;
+                                }
+                                &.subItemName {
+                                    a {
+                                        color: #3e66fb;
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        font-weight: 400;
+                                    }
+                                }
+                                &.statusBadge {
+                                    a {
+                                        border-radius: 100px;
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        color: #ffffff;
+                                        display: inline-block;
+                                        vertical-align: middle;
+                                        padding: 2px 15px;
+                                        font-weight: 500;
+                                        margin-right: 16px;
+                                        text-align: center;
+                                        &.staff {
+                                            padding: 0px 0px !important;
+                                            background: #b57bff;
+                                            width: 105px;
+                                        }
+                                        &.hours {
+                                            padding: 0px 0px !important;
+                                            background: #c2c9d1;
+                                            width: 68px;
+                                        }
+                                        &.spf {
+                                            padding: 0px 11px !important;
+                                            background: #f03738;
+                                        }
+                                    }
+                                }
+                                &.spanText {
+                                    text-align: center;
+                                    span {
+                                        text-align: center;
+                                        font-size: 16px;
+                                        font-weight: 500;
+                                        &.blue {
+                                            color: #3e66fb;
+                                        }
+                                        &.gray {
+                                            color: #9eb3fd;
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover {
+                                background-color: #000000;
+                                td {
+                                    &.itemName {
+                                        color: #ffffff;
+                                        font-weight: 500;
+                                    }
+                                    &.subItemName {
+                                        a {
+                                            color: #dfdfdf;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.recoveryTable {
+                    table {
+                        width: 100%;
+                        border-radius: 16px 16px 0 0;
+                        background: #000000;
+                        overflow: hidden;
+                        tbody {
+                            tr {
+                                td {
+                                    padding: 21px 20px;
+                                    // border: 2px solid black;
+                                    &.subItemName {
+                                        width: 40%;
+                                        padding-left: 32px;
+                                        a {
+                                            color: #fff;
+                                            font-size: 14px;
+                                            line-height: 16px;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                    &.statusPending {
+                                        text-align: right;
+                                        padding-right: 49px;
+                                        span {
+                                            color: #f3bb1c;
+                                            font-weight: 400;
+                                            font-weight: 500;
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            margin-left: 6px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .buttonGroup {
+                margin-top: 40px;
+                .goBack,
+                .goBack:hover {
+                    border: 1px solid #3cc13b;
+                    box-sizing: border-box;
+                    border-radius: 100px;
+                    padding: 10px 41px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #3cc13b !important;
+                    cursor: pointer;
+                }
+                .finishBtn,
+                .finishBtn:hover {
+                    background: #3cc13b;
+                    color: #fff;
+                    padding: 11px 74px;
+                    border-radius: 100px;
+                    margin-left: 16px;
+                }
+            }
+            .recoverySection {
+                padding: 24px;
+                background-color: #f9fafa;
+                border-radius: 0 0 16px 16px;
+
+                .heading {
+                    color: #000000;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                    font-weight: 500;
+                }
+                .enablesHeading {
+                    color: #616569;
+                    font-size: 13px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    margin-bottom: 29px;
+                }
+                .recoveryStatus {
+                    margin-bottom: 20px;
+                    .status {
+                        border-radius: 8px;
+                        padding: 3px 0px;
+                        display: inline-block;
+                        font-weight: 500;
+                        font-size: 13px;
+                        margin-bottom: 12px;
+                        width: 126px;
+                        text-align: center;
+                        &.pendingStatus {
+                            background: #f3bb1c;
+                            color: #ffffff;
+                        }
+                        &.completeStatus {
+                            background: #ceefce;
+                            color: #3cc13b;
+                        }
+                    }
+                    .pendingContainer {
+                        .statusBox {
+                            background-color: #ffffff;
+                            box-shadow: 0px 6px 12px #e4e3e3;
+                            border-radius: 12px;
+                            padding: 24px;
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            -webkit-box-pack: justify;
+                            -ms-flex-pack: justify;
+                            justify-content: space-between;
+                            margin-bottom: 24px;
+                            .time {
+                                min-width: 180px;
+                                h5 {
+                                    background-color: #f3bb1c;
+                                    color: #ffffff;
+                                    font-size: 13px;
+                                    font-weight: 500;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    margin: 0;
+                                    margin-right: 0px;
+                                    height: 28px;
+                                    width: 28px;
+                                    border-radius: 50%;
+                                    padding: 7px 7px;
+                                    margin-right: 10px;
+                                    text-align: center;
+                                }
+                                h6 {
+                                    font-size: 15px;
+                                    color: #000000;
+                                    display: inline-block;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    font-weight: 500;
+                                    margin: 0;
+                                }
+                            }
+                     
+                            .statusMsg {
+                                margin-left: 35px;
+                                h4 {
+                                    color: #3e66fb;
+                                    font-weight: 500;
+                                    margin: 0;
+                                    font-size: 18px;
+                                    margin-bottom: 7px;
+                                }
+                                p {
+                                    color: #9eb3fd;
+                                    font-weight: 400;
+                                    margin: 0;
+                                    font-size: 14px;
+                                }
+                            }
+                            .statusCheck {
+                                margin-left: 60px;
+                                min-width: 140px;
+                                text-align: right;
+                                position: relative;
+                                h6 {
+                                    color: #616569;
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    margin-bottom: 0px;
+                                    margin-top: 73px;
+                                    line-height: 18px;
+                                }
+                                .date {
+                                    color: #c2c9d1;
+                                    font-size: 13px;
+                                }
+                                .check {
+                                    display: block;
+                                    position: absolute;
+                                    cursor: pointer;
+                                    font-size: 22px;
+                                    -webkit-user-select: none;
+                                    -moz-user-select: none;
+                                    -ms-user-select: none;
+                                    user-select: none;
+                                    right: 25px;
+                                    top: 0;
+                                    input {
+                                        position: absolute;
+                                        opacity: 0;
+                                        cursor: pointer;
+                                        height: 0;
+                                        width: 0;
+                                        &:checked {
+                                            ~ {
+                                                .checkmark {
+                                                    background-color: #b1e6b1;
+                                                    border: 1px solid #b1e6b1;
+                                                    &:after {
+                                                        display: block;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .checkmark {
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        height: 25px;
+                                        width: 25px;
+                                        background-color: #ffffff;
+                                        border-radius: 8px;
+                                        border: 1px solid #3cc13b;
+                                        &:after {
+                                            content: "";
+                                            position: absolute;
+                                            display: none;
+                                            left: 9px;
+                                            top: 5px;
+                                            width: 5px;
+                                            height: 10px;
+                                            border: solid #3cc13b;
+                                            border-width: 0 3px 3px 0;
+                                            -webkit-transform: rotate(45deg);
+                                            transform: rotate(45deg);
+                                        }
+                                    }
+                                }
+                            }
+                            &.completed {
+                                .time {
+                                    h5 {
+                                        background-color: #ceefce;
+                                        color: #3cc13b;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // -------------tab-------------
+            .tabContent {
+                margin-top: 46px;
+                .TeamMember {
+                    .teamMember {
+                        background: #f6f6f7;
+                        border-radius: 24px;
+                        padding: 40px 43px;
+                        .heading {
+                            h3 {
+                                font-weight: 500;
+                                font-size: 24px;
+                                line-height: 32px;
+                                color: #000000;
+                                margin-bottom: 3px;
+                            }
+                            h6 {
+                                color: #c2c9d1;
+                                font-size: 16px;
+                                line-height: 24px;
+                                font-weight: 400;
+                                margin-bottom: 30px;
+                            }
+                        }
+                        .serchSec {
+                            input {
+                                border: 1px solid #eddeff;
+                                background-color: transparent;
+                                padding: 10px 10px 10px 40px;
+                                border-radius: 8px;
+                                font-size: 14px;
+                                line-height: 20px;
+                                font-weight: 400;
+                                background-image: url("../../../public/images/Input-Search.svg");
+                                background-repeat: no-repeat;
+                                background-size: 21px;
+                                background-position: 10px;
+                                color: #dabdff;
+                                &::-webkit-input-placeholder {
+                                    /* Edge */
+                                    color: #dabdff;
+                                }
+                                &:-ms-input-placeholder {
+                                    /* Internet Explorer 10-11 */
+                                    color: #dabdff;
+                                }
+                                &::-ms-input-placeholder {
+                                    color: #dabdff;
+                                }
+                                &::placeholder {
+                                    color: #dabdff;
+                                }
+                            }
+                        }
+
+                        .member {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            .leftMember {
+                                -webkit-box-flex: 0;
+                                -ms-flex: 0 0 60%;
+                                flex: 0 0 60%;
+                                width: 60%;
+                                position: relative;
+                                display: block;
+                                min-height: 415px;
+                                max-height: 416px;
+                                overflow: auto;
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    position: absolute;
+                                    background-color: #c2c9d1;
+                                    height: 100%;
+                                    width: 1px;
+                                    right: 2px;
+                                    z-index: 1;
+                                }
+                                .user {
+                                    padding: 17px 65px 17px 16px;
+                                    background: #ffffff;
+                                    // box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.1);
+                                    border-radius: 18px;
+                                    margin: 0 28px 13px 0;
+                                    position: relative;
+                                    cursor: pointer;
+                                    width: 43%;
+                                    height: fit-content;
+                                    display: inline-block;
+                                    h5 {
+                                        color: #000000;
+                                        font-weight: 500;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                        margin-bottom: 2px;
+                                    }
+                                    h6 {
+                                        color: #c2c9d1;
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        font-weight: 400;
+                                        margin: 0px;
+                                    }
+                                    .userName {
+                                        position: absolute;
+                                        color: #ffffff;
+                                        top: 50%;
+                                        -webkit-transform: translateY(-50%);
+                                        transform: translateY(-50%);
+                                        height: 48px;
+                                        width: 48px;
+                                        text-align: center;
+                                        border-radius: 50%;
+                                        font-weight: 500;
+                                        padding: 15px 2px;
+                                        right: 12px;
+                                        font-size: 14px;
+                                        line-height: 20px;
+                                    }
+                                }
+                            }
+                            .rightMember {
+                                -webkit-box-flex: 0;
+                                -ms-flex: 0 0 40%;
+                                flex: 0 0 40%;
+                                width: 40%;
+                                position: relative;
+                                .user {
+                                    padding: 18px 18px 18px 18px;
+                                    background: #ffffff;
+                                    -webkit-box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.1);
+                                    box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.1);
+                                    border-radius: 22px;
+                                    position: absolute;
+                                    cursor: pointer;
+                                    left: 60px;
+                                    right: 0px;
+                                    margin: 0;
+                                    h5 {
+                                        font-weight: 500;
+                                        font-size: 24px;
+                                        line-height: 32px;
+                                        margin-bottom: 3px;
+                                    }
+                                    h6 {
+                                        color: #c2c9d1;
+                                        font-size: 20px;
+                                        line-height: 28px;
+                                        font-weight: 400;
+                                        margin: 0px;
+                                    }
+                                    .userName {
+                                        position: absolute;
+                                        color: #ffffff;
+                                        top: 15px;
+                                        height: 64px;
+                                        width: 64px;
+                                        text-align: center;
+                                        border-radius: 50%;
+                                        font-weight: 500;
+                                        padding: 18px 2px;
+                                        right: 12px;
+                                        font-weight: 500;
+                                        font-size: 20px;
+                                        line-height: 28px;
+                                    }
+                                    .socialMedia {
+                                        border-top: 1px solid rgba(0, 0, 0, 0.08);
+                                        margin-top: 22px;
+                                        ul {
+                                            list-style: none;
+                                            padding: 0px;
+                                            margin: 0px;
+                                            padding-top: 11px;
+                                            li {
+                                                margin-right: 26px;
+                                                a {
+                                                    display: block;
+                                                    img {
+                                                        width: 20px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .arrowSection{
+                                    list-style: none;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    position: absolute;
+                                    right: 0;
+                                    bottom: 0;
+                                    display: -webkit-box;
+                                    display: -ms-flexbox;
+                                    display: flex;
+                                    -webkit-box-align: center;
+                                        -ms-flex-align: center;
+                                            align-items: center;
+                                    padding: 0;
+                                    margin: 0;
+                                   li{
+                                    margin-right: 8px;
+                                    .moveBack{
+                                        cursor: pointer;
+                                    }
+                                    .moveForward{
+                                        cursor: pointer;
+                                    }
+                                   }
+                                }
+                            }
+                        }
+                    }
+               
+                &.goldTeamMember{
+                    .teamMember{
+                        .member{
+                            .leftMember{
+                                .user{
+                                   .userName{
+                                    background-color: #3e66fb;
+                                    }
+                                    &.active{
+                                        background: #3E66FB;
+                                        h5{
+                                            color: #fff;
+                                        }
+                                        .userName{
+                                            background-color: #FFF;
+                                            color: #3E66FB;
+                                            }
+                                    }
+                                }
+                            }
+                            .rightMember{
+                                .user{
+                                    border-bottom: 3px solid #9eb3fd;
+                                    h5{
+                                        color: #3e66fb;
+                                    }
+                                    .userName{
+                                        background-color: #3e66fb;
+                                    }
+                                }
+                              
+                            }
+                        }
+                    }
+                }
+                &.sliverTeamMember{
+                    .teamMember{
+                        .member{
+                            .leftMember{
+                                .user{
+                                   .userName{
+                                    background-color:  #B57BFF;
+                                    }
+                                    &.active{
+                                        background:  #B57BFF;
+                                        h5{
+                                            color: #fff;
+                                        }
+                                        .userName{
+                                            background-color: #FFF;
+                                            color:  #B57BFF;
+                                            }
+                                    }
+                                }
+                            }
+                            .rightMember{
+                                .user{
+                                    border-bottom: 3px solid #dabdff;
+                                    h5{
+                                        color: #b57bff;
+                                    }
+                                    .userName{
+                                        background-color:  #B57BFF;
+                                    }
+                                }
+                              
+                            }
+                        }
+                    }  
+                }
+                &.brongeTeamMember{
+                    .teamMember{
+                        .member{
+                            .leftMember{
+                                .user{
+                                   .userName{
+                                    background-color:  #92979d;
+                                    }
+                                    &.active{
+                                        background:  #92979d;
+                                        h5{
+                                            color: #fff;
+                                        }
+                                        .userName{
+                                            background-color: #FFF;
+                                            color: #92979d;
+                                            }
+                                    }
+                                }
+                            }
+                            .rightMember{
+                                .user{
+                                    border-bottom: 3px solid #92979d;
+                                    h5{
+                                        color: #92979d;
+                                    }
+                                    .userName{
+                                        background-color:  #92979d;
+                                    }
+                                }
+                              
+                            }
+                        }
+                    }  
+                }
+            }
+            }
+        }
+        .panelSection {
+            padding: 17px 16px 40px;
+            .headingSec {
+                padding: 0 20px;
+                h2 {
+                    font-weight: 500;
+                    font-size: 36px;
+                    line-height: 48px;
+                    margin-bottom: 0px;
+                }
+                p {
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #c2c9d1;
+                }
+            }
+            .ListArea {
+                margin-top: 30px;
+                .listSec {
+                    box-shadow: 0px 6px 12px #ecebeb;
+                    background-color: #ffffff;
+                    border-radius: 12px;
+                    padding: 15px 20px;
+                    -webkit-transition: all 0.2s linear 0s;
+                    transition: all 0.2s linear 0s;
+                    margin-bottom: 32px;
+                    &:hover {
+                        box-shadow: 0px 6px 12px #d7d7d7;
+                    }
+                    .dashboardTitle {
+                        font-size: 20px !important;
+                        line-height: 62px !important;
+                        font-weight: 500;
+                        height: 64px !important;
+                        width: 64px !important;
+                        color: #fff;
+                        text-align: center;
+                        background-color: #9eb2fd;
+                        border-radius: 50px;
+                        margin: 0px;
+                    }
+                    .pdfIcon {
+                        width: 64px;
+                        height: 64px;
+                        margin-right: 40px;
+                        border-radius: 50%;
+                    }
+                    h5 {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: #2f3c4c !important;
+                    }
+                    .idSec {
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #92979d !important;
+                        font-weight: 400;
+                    }
+                    .dateSec {
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #92979d !important;
+                        font-weight: 400;
+                    }
+                    .satusSec {
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #3e66fb;
+                    }
+                    .finishSetupBtn,
+                    .viewBtn {
+                        padding: 7px 22px;
+                        min-width: auto;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        background-color: #b57bff;
+                        color: #fff;
+                        margin-left: 11px;
+                        border-radius: 100px;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                    .viewBtn {
+                        margin-left: 0px;
+                    }
+                    .manageBtn {
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 500;
+                        display: inline-block;
+                        margin-right: 45px;
+                        color: #b57bff;
+                        background: transparent;
+                        padding: 0;
+                    }
+                }
+                .addBtn {
+                    width: 46.67px;
+                    height: 46.67px;
+                    background: #b57bff;
+                    border-radius: 13px;
+                    line-height: 46.67px;
+                    padding: 0;
+                    img {
+                        width: 18.67px;
+                        margin-top: -3px;
+                    }
+                }
+            }
+            // ----------
+        }
+    }
+}

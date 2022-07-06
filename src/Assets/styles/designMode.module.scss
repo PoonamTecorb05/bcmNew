@@ -1,0 +1,352 @@
+.contentWrapper {
+    min-height: 227px;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 272px;
+    .bcpActivated {
+        padding: 37px 30px 32px 28px !important;
+        background-color: #fff;
+        h3 {
+            color: #000;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+        }
+        .afterApproved {
+            background-color: #fff;
+        }
+    }
+    .innerSec {
+        padding: 53px 44px !important;
+        .panelSec {
+            background-color: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0px 16px 24px #cdcccc;
+            .headeSec {
+                background-color: #000;
+                color: #fff;
+                padding: 14px 25px;
+                h3 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+        .panelSec2 {
+            background-color: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0px 16px 24px #cdcccc;
+            .panelHeadWhite {
+                background-color: #fff;
+                color: #000;
+                padding: 14px 25px;
+                h3 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+            .progressBarArea {
+                min-height: 320px;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+        }
+        .panelSec3 {
+            background-color: #ffffff;
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0px 16px 24px #cdcccc;
+            .panelRedHead {
+                background-color: #f03738;
+                color: #fff;
+                padding: 14px 25px;
+                h3 {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #fff;
+                    font-weight: 400;
+                }
+            }
+            .panelInnerArea {
+                height: 250px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                h6 {
+                    font-weight: 500;
+                    text-transform: capitalize;
+                    font-size: 16px;
+                }
+                .buttonList {
+                    margin: 0px;
+                    padding: 0px;
+                    list-style-type: none;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    button {
+                        font-size: 12px;
+                        font-weight: 400;
+                        min-width: 122px;
+                        margin-right: 0.6rem;
+                        position: relative;
+                        z-index: 10;
+                        border-radius: 100px;
+                        padding: 6px 12px !important;
+                        &::after {
+                            content: "";
+                            width: 9px;
+                            height: 2px;
+                            background-color: #f79b9b;
+                            position: absolute;
+                            left: -11px;
+                            top: 50%;
+                            z-index: 1;
+                        }
+                        &:first-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+                        &.solidfilled {
+                            background-color: #f03738;
+                            border-color: #f03738;
+                            color: #fff;
+                        }
+                        &.redBorder {
+                            background-color: #fff;
+                            border: 2px solid #f79b9b;
+                            color: #f79b9b;
+                        }
+                        &.spfBtn {
+                            background-color: #fdebeb;
+                            border: 2px solid #f03738;
+                            color: #f03738;
+                            min-width: initial;
+                        }
+                    }
+                    /*RED CHECKBOX*/
+                    .cbred {
+                        display: block;
+                        position: relative;
+                        padding-left: 35px;
+                        margin-bottom: 16px;
+                        cursor: pointer;
+                        font-size: 22px;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                            &:checked ~ .checkmark {
+                                background-color: #fff;
+                                border-color: #f03738;
+                                &:after {
+                                    display: block;
+                                }
+                            }
+                        }
+                        .checkmark {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            height: 24px;
+                            width: 24px;
+                            background-color: #fff;
+                            border: 2px solid #f03738;
+                            border-radius: 6px;
+                            &:after {
+                                content: "";
+                                position: absolute;
+                                display: none;
+                                left: 8px;
+                                top: 4px;
+                                width: 5px;
+                                height: 10px;
+                                border: solid #3e66fb;
+                                border-width: 0 2px 2px 0;
+                                -webkit-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                            }
+                        }
+                        &:hover {
+                            input ~ .checkmark {
+                                background-color: #ccc;
+                            }
+                        }
+                    }
+                }
+            }
+            .panelFooter {
+                box-shadow: 0px -3px 11px 1px #e5e5e5;
+                background-color: #fff;
+                padding: 14px 20px;
+                border-bottom-right-radius: 24px;
+                border-bottom-left-radius: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .moveLeft,
+                .moveRight {
+                    background-color: #d1d3d7;
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 28px;
+                    border: none;
+                    outline: none;
+                    text-align: center;
+                    line-height: 28px;
+                    svg {
+                        margin-top: 5px;
+                        width: 13px;
+                    }
+                }
+                .textSpan {
+                    font-size: 14px;
+                }
+            }
+        }
+        .recoveryTimeline {
+            position: relative;
+            .timelineCaption {
+                position: absolute;
+                left: 60px;
+                top: 0px;
+                background: #000;
+                width: 1px;
+                height: 100%;
+                z-index: 1;
+                span {
+                    background: #000;
+                    color: #fff;
+                    padding: 4px 12px;
+                    display: inline-block;
+                    border-radius: 40px;
+                    text-align: center;
+                    min-width: 56px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 0px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+            .jqTimepsaceContainer {
+                position: relative;
+                overflow: hidden;
+                margin: 0 auto;
+                padding: 0;
+                color: #ffffff;
+                .jqTimespaceDataContainer {
+                    /*box-shadow: 0 6px 5px -5px var(--shadow);*/
+                    margin: 2rem auto 1.5rem;
+                    /*border: 1px solid #5f5f5f;*/
+                    -moz-user-select: none;
+                    user-select: none;
+                    background: #fff;
+
+                    padding-left: 60px; /*for crisis line*/
+                    min-height: 275px;
+                    .jqTimespaceAnimated {
+                        transition: all 1.2s cubic-bezier(0.29, 0.575, 0.465, 1);
+                        position: relative;
+                        left: 0;
+                        margin: 0;
+                        padding: 0;
+                        line-break: strict;
+                        cursor: move;
+                        height: 250px;
+                        header {
+                            z-index: 0;
+                            position: relative;
+                            background: #fff;
+                            div {
+                                display: flex;
+                                position: relative;
+                                box-sizing: border-box;
+                                margin: 0;
+                                // border-bottom: 1px solid #c2c9d1;
+                                text-align: center;
+                                position: relative;                          
+                                &:last-child {
+                                    border-bottom: 1px solid #c2c9d1;
+                                    text-align: left;
+                                    width: 100%;
+                                    &::after{
+                                        content: "";
+                                        position: absolute;
+                                        bottom: -1px;
+                                        left: -60px;
+                                        border-bottom: 1px solid #c2c9d1;
+                                        width: 100%;
+                                    }
+                                }
+                                time {
+                                    width: 6.5%;
+                                    display: block;
+                                    box-sizing: border-box;
+                                    margin: 0;
+                                    padding: 0.5rem 0px;
+                                    font-size: 12px;
+                                    text-align: right;
+                                    &.critical {
+                                        color: #f03738;
+                                        font-weight: 400;
+                                        // border-left: 1px solid #ffe3e3;
+                                    }
+                                    &.moderate {
+                                        color: #f3bb1c;
+                                        font-weight: 400;
+                                        // border-left: 1px solid #f7ebcb;
+                                    }
+                                    &.low {
+                                        color: #3cc13b;
+                                        font-weight: 400;
+                                        // border-left: 1px solid #ccf9cb;
+                                    }
+                                }
+                            }
+                        }
+                        section {
+                            z-index: 1;
+                            display: flex;
+                            position: relative;
+                            top: 0;
+                            min-height: 100%;
+                            .jqTimespaceColumn {
+                                box-sizing: border-box;
+                                padding-bottom: 20px;
+                                width: 6%;
+                                &.critical {
+                                    border-right: 1px solid #ffe3e3;
+                                }
+                                &.moderate {
+                                    border-right: 1px solid #f7ebcb;
+                                }
+                                &.low {
+                                    border-right: 1px solid #ccf9cb;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

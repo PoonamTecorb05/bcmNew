@@ -1,0 +1,16 @@
+.sliderSection{
+    /* margin-top:100px; */
+    margin-bottom: 10px;
+}
+.jobsliderSection{
+    margin-top: 10px;
+    padding: 0 !important;
+    }
+    .slick-track{
+        width: 100% !important;
+    }
+    @media (max-width: 991px) and (min-width:320px){
+        .sliderSection{
+            margin-bottom: 0px;
+        }
+    } 

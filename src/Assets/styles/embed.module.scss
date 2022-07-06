@@ -1,0 +1,673 @@
+$FontFamily: var(--fontFamity);
+.contentWrapper {
+    min-height: 227px;
+    transition: margin-left 0.3s ease-in-out;
+    margin-left: 272px;
+    .bcpActivated {
+        padding: 31px 30px 32px 28px !important;
+        background-color: #fff;
+        h3 {
+            color: #000;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 32px;
+            font-family: $FontFamily;
+        }
+        .afterApproved {
+            background-color: #fff;
+        }
+    }
+    .innerSec {
+        padding: 48px 40px !important;
+        .panelSection {
+            background-color: #ffffff;
+            padding: 28px 44px;
+            border-radius: 24px;
+            h2 {
+                font-family: $FontFamily;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 36px;
+                line-height: 48px;
+                margin-bottom: 4px;
+                color: #000000;
+            }
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 28px;
+                color: #c2c9d1;
+                span {
+                    color: #3e66fb;
+                }
+            }
+            .approvedBtn {
+                width: 105px;
+                height: 40px;
+                margin-top: 45px;
+                img {
+                    width: 100%;
+                }
+            }
+            .right {
+                .complete {
+                    float: right;
+                    img {
+                        width: 20px;
+                        margin-right: 4px;
+                        float: left;
+                    }
+                    span {
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 16px;
+                        color: #3cc13b;
+                    }
+                }
+                .pending {
+                    float: right;
+                    img {
+                        display: inline-block;
+                        vertical-align: middle;
+                        margin-right: 6px;
+                        width: 20px;
+                    }
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                        font-size: 20px;
+                        line-height: 28px;
+                        font-weight: 500;
+                        color: #3e66fb;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .searchSec {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 24px;
+                margin-top: 40px;
+                .left {
+                    select {
+                        border-radius: 11.2558px;
+                        border: 1px solid #e1e4e8;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding: 4px 15px;
+                        width: 100%;
+                        height: 42px;
+                        color: #b57bff;
+                    }
+                }
+            }
+
+            .actionCardList {
+                .actionCard {
+                    border: 1px solid #e0e4e8;
+                    height: auto;
+                    border-radius: 8px;
+                    background-color: #fff;
+                    padding: 24px;
+                    margin-bottom: 35px;
+                    .actionCardHeader {
+                        h4 {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            font-family: $FontFamily;
+                            display: inline-block;
+                            margin-bottom: 0px;
+                        }
+                        h6 {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: #c2c9d1;
+                            font-family: $FontFamily;
+                        }
+                        .badges {
+                            display: inline-block;
+                            line-height: 1;
+                            text-align: center;
+                            white-space: nowrap;
+                            vertical-align: baseline;
+                            border-radius: 0.25rem;
+                            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+                                border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                            border-radius: 10rem;
+                            font-weight: 500;
+                            font-size: 10px;
+                            line-height: 14px;
+                            font-family: "Rubik", sans-serif;
+                            padding: 3px 8px;
+                            margin-right: 8px;
+                            color: #fff;
+                            text-transform: capitalize;
+                            &.critical {
+                                background-color: #ff0031;
+                            }
+                            &.moderate {
+                                background-color: #f8c000;
+                            }
+                            &.timebadges {
+                                background-color: #92979d;
+                            }
+                            &.spfbadges {
+                                background: #f03738;
+                                margin-right: 0px;
+                            }
+                            &.staff {
+                                background: #b57bff;
+                            }
+                        }
+                        .editIcon {
+                            width: 19px;
+                            height: 19px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .actionCardBody {
+                        margin-top: 16px;
+                        h5 {
+                            font-weight: 500;
+                            font-size: 10px;
+                            line-height: 14px;
+                            display: flex;
+                            align-items: center;
+                            color: #3e66fb;
+                        }
+                        label {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 16px;
+                            font-family: $FontFamily;
+                            margin-bottom: 0px;
+                            color: #91979d;
+                        }
+                        p {
+                            color: #c2c9d1;
+                            font-family: $FontFamily;
+                            font-weight: 300;
+                            font-size: 10px;
+                            line-height: 14px;
+                            margin-bottom: 15px;
+                            &.delay {
+                                color: #f03738;
+                            }
+                        }
+                        .treatedBtn {
+                            background: #ebf9eb;
+                            border-radius: 4px;
+                            font-weight: 500;
+                            font-size: 10px;
+                            line-height: 14px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            color: #3cc13b;
+                            padding: 2px 18px 4px;
+                            margin-top: 25px;
+                        }
+                        .notImplementedBtn {
+                            background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+                                #3e66fb;
+                            border-radius: 4px;
+                            font-weight: 500;
+                            font-size: 10px;
+                            line-height: 14px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            color: #3e66fb;
+                            padding: 2px 18px 4px;
+                            margin-top: 25px;
+                        }
+                        .delayBtn {
+                            background: #fdebeb;
+                            border-radius: 4px;
+                            font-weight: 500;
+                            font-size: 10px;
+                            line-height: 14px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            color: #f03738;
+                            padding: 2px 18px 4px;
+                            margin-top: 25px;
+                        }
+                        .inProgressBtn {
+                            background: #fef8e9;
+                            border-radius: 4px;
+                            font-weight: 500;
+                            font-size: 10px;
+                            line-height: 14px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            color: #f3bb1c;
+                            padding: 2px 18px 4px;
+                            margin-top: 25px;
+                        }
+                        .containerBox {
+                            h6 {
+                                font-weight: 300;
+                                font-size: 10px;
+                                line-height: 14px;
+                                color: #c2c9d1;
+                                font-family: $FontFamily;
+                            }
+                            p {
+                                color: #c2c9d1;
+                                font-family: $FontFamily;
+                                font-weight: 300;
+                                font-size: 10px;
+                                line-height: 14px;
+                                margin-bottom: 15px;
+                            }
+                            .imgSec {
+                                display: inline-block;
+                                img {
+                                    width: 17px;
+                                    height: 17px;
+                                    display: inline-block;
+                                }
+                                .heading {
+                                    padding-left: 7px;
+                                    color: #b57bff;
+                                    font-weight: 500;
+                                    font-size: 10px;
+                                    line-height: 14px;
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                    // -------form sec-------
+                    .FormSection {
+                        // margin-top: 14px;
+                        .customeFormGroup {
+                            margin-bottom: 12.5px;
+                            position: relative;
+                            input,
+                            textarea {
+                                border: 1px solid #e1e4e8;
+                                border-radius: 4px;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 14px;
+                                padding: 4px 6px;
+                                color: #ddd;
+                                width: 100%;
+                                &::placeholder {
+                                    color: #92979d;
+                                }
+                                &.actionTimeElement {
+                                    color: #3e66fb;
+                                }
+                                &.actionTitleDiv {
+                                    color: #000;
+                                }
+                                &.actionDescriptionDiv {
+                                    color: #92979d;
+                                }
+                                &.actionUserName {
+                                    color: #b57bff;
+                                }
+                            }
+                            textarea {
+                                height: 56px;
+                                margin-bottom: 0px;
+                            }
+                            &.ownerInput {
+                                img {
+                                    position: absolute;
+                                    top: 8px;
+                                    left: 6px;
+                                    width: 16px;
+                                }
+                                input {
+                                    padding-left: 22px;
+                                    height: 31px;
+                                }
+                            }
+                        }
+                        .time {
+                            width: 122px;
+                            margin-bottom: 9px;
+                        }
+                        button {
+                            width: 58px;
+                            height: 18px;
+                            background: #3cc13b;
+                            border-radius: 100px;
+                            font-weight: 400;
+                            font-size: 10px;
+                            line-height: 17px;
+                            color: #fff;
+                            padding: 0px 0px 3px;
+                            position: absolute;
+                            bottom: 9px;
+                            left: 15px;
+                        }
+                    }
+                }
+                .AddActionCard {
+                    font-weight: 400;
+                    font-size: 12px;
+                    font-family: $FontFamily;
+                    line-height: 20px;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    margin: auto;
+                    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #b57bff;
+                    border-radius: 8px;
+                    min-height: 238px;
+                    border: 1px solid #e0e4e8;
+                    cursor: pointer;
+                    .add {
+                        a {
+                            display: block;
+                            img {
+                                width: 46px;
+                                margin-bottom: 5px;
+                            }
+                            h6 {
+                                color: #b57bff;
+                                font-size: 14px;
+                                margin-top: 10px;
+                                font-weight: 500;
+                            }
+                        }
+                        margin: auto;
+                        text-align: center;
+                    }
+                }
+            }
+            &.TraingpanelSection {
+                padding: 57px 40px;
+                // -----------------
+                .embedTraining {
+                    background-color: #ffffff;
+                    border-radius: 24px;
+                    // padding: 57px 40px;
+                    .leftSec {
+                        width: 65%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: end;
+                        h4 {
+                            color: #3e66fb;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            margin-bottom: 3px;
+                        }
+                        h5 {
+                            color: #000000;
+                            font-size: 24px;
+                            line-height: 32px;
+                            font-weight: 400;
+                            margin: 0;
+                        }
+                        .time {
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 20px;
+                            color: #616569;
+                        }
+                    }
+                    .rightSec {
+                        width: 35%;
+                        text-align: right;
+                        .complete {
+                            // float: right;
+                            width: fit-content;
+                            margin-left: auto;
+                            img {
+                                width: 20px;
+                                margin-right: 4px;
+                                float: left;
+                            }
+                            span {
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 16px;
+                                color: #3cc13b;
+                            }
+                        }
+                        .pending {
+                            // float: right;
+                            width: fit-content;
+                            margin-left: auto;
+                            img {
+                                display: inline-block;
+                                vertical-align: middle;
+                                margin-right: 6px;
+                                width: 20px;
+                            }
+                            span {
+                                display: inline-block;
+                                vertical-align: middle;
+                                font-size: 20px;
+                                line-height: 28px;
+                                font-weight: 500;
+                                color: #3e66fb;
+                                font-weight: 500;
+                            }
+                        }
+                        .uploadBtn {
+                            width: 172px;
+                            height: 40px;
+                            background: #b57bff;
+                            border-radius: 100px;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #fff;
+                            padding: 0px 0px 0px;
+                            margin-top: 32px;
+                        }
+                    }
+                }
+
+                // -------------bottom------
+                .embedTrainingMode {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 32px;
+                    .leftSide {
+                        width: 65%;
+                        .videoPlay {
+                            .iframeBorder {
+                                // border-radius: 24px;
+                                overflow: hidden;
+                                video {
+                                    border-radius: 24px;
+                                }
+                            }
+                        }
+                        .aboutMode {
+                            margin-top: 24px;
+                            h4 {
+                                color: #000000;
+                                font-size: 16px;
+                                line-height: 24px;
+                                margin-bottom: 4px;
+                                font-weight: 400;
+                            }
+                            p {
+                                color: #92979d;
+                                margin-bottom: 24px;
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 20px;
+                            }
+                            ul {
+                                list-style: none;
+                                padding: 0;
+                                margin: 0px;
+                                li {
+                                    margin-right: 11px;
+                                    &.count {
+                                        margin-right: 10px;
+                                        span {
+                                            display: block;
+                                            background-color: #f3bb1c;
+                                            font-weight: 500;
+                                            color: #ffffff;
+                                            height: 30px;
+                                            width: 30px;
+                                            border-radius: 50%;
+                                            text-align: center;
+                                            padding: 3px 0;
+                                            font-size: 16px;
+                                            line-height: 24px;
+                                        }
+                                    }
+                                    &.star {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .rightSide {
+                        width: 35%;
+                        flex: 0 0 35%;
+                        padding-left: 30px;
+                        .watchlist {
+                            .heading {
+                            }
+                            .ListSec {
+                                padding-left: 40px;
+                                position: relative;
+                                &::before {
+                                    content: "";
+                                    display: block;
+                                    position: absolute;
+                                    left: 6px;
+                                    top: 0;
+                                    bottom: 0;
+                                    width: 1px;
+                                    background-color: #f0f2f3;
+                                }
+                                .list {
+                                    padding: 0px;
+                                    margin: 0px;
+                                    border: 0;
+                                    position: relative;
+                                    margin-bottom: 20px;
+                                    &::before {
+                                        content: "";
+                                        display: block;
+                                        position: absolute;
+                                        height: 22px;
+                                        width: 22px;
+                                        background-color: #cfd9fe;
+                                        border-radius: 50%;
+                                        left: -45px;
+                                        top: 0;
+                                    }
+                                    &.complete {
+                                        &::before {
+                                            background-color: #ceefce;
+                                        }
+                                        &::after {
+                                            content: "";
+                                            display: block;
+                                            position: absolute;
+                                            left: -36px;
+                                            top: 5px;
+                                            width: 5px;
+                                            height: 9px;
+                                            border: solid #3cc13b;
+                                            border-width: 0 2px 2px 0;
+                                            transform: rotate(45deg);
+                                        }
+                                    }
+                                    &.active {
+                                        &::before {
+                                            background-color: #3e66fb;
+                                        }
+                                        &::after {
+                                            content: "";
+                                            display: block;
+                                            position: absolute;
+                                            height: 8px;
+                                            width: 8px;
+                                            background-color: #ffffff;
+                                            border-radius: 50%;
+                                            left: -38px;
+                                            top: 7px;
+                                        }
+                                    }
+                                    img {
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        height: 100%;
+                                        max-width: 125px;
+                                        width: 125px;
+                                        object-fit: cover;
+                                        border-radius: 10px;
+                                    }
+                                    .content {
+                                        padding-left: 135px;
+                                        .editBtn {
+                                            width: 13px;
+                                            height: 14px;
+                                            background: transparent;
+                                            padding: 0px;
+                                            line-height: 13px;
+                                            position: absolute;
+                                            right: 0;
+                                            img {
+                                                position: relative;
+                                                max-width: 100%;
+                                                width: 100%;
+                                                height: auto;
+                                            }
+                                        }
+                                        h5 {
+                                            color: #3e66fb;
+                                            font-weight: 500;
+                                            font-size: 10px;
+                                            line-height: 14px;
+                                            margin-bottom: 2px;
+                                        }
+                                        h6 {
+                                            font-size: 10px;
+                                            line-height: 12px;
+                                            line-height: 16px;
+                                            font-weight: 400;
+                                            color: #000000;
+                                            margin-bottom: 4px;
+                                        }
+                                        .time {
+                                            color: #92979d;
+                                            font-size: 12px;
+                                            line-height: 16px;
+                                            font-weight: 400;
+                                            margin-bottom: 0px;
+                                            display: block;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
